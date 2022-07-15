@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            }
+        }
+    </script>
+    <div class="resume">
+        <header>
+            <div class="flex mb-2">
+                <h1 class="text-4xl">张梓靖<span class="text-lg ml-2">意向岗位：后端开发工程师</span></h1>
+            </div>
+            <div class="flex mb-2">
+                <div class="mr-4"><b class="inline-block w-16">工作地点</b> 北京</div>
+                <div class="mr-4"><b class="inline-block w-8">邮箱</b> pluvet@foxmail.com</div>
+                <div class="mr-4"><b class="inline-block w-8">电话</b> +86 185 8738 7858</div>
+            </div>
+            <div class="flex">
+                <div class="mr-4"><b class="inline-block w-16">Github</b> <a
+                        href="https://github.com/pluveto">https://github.com/pluveto</a></div>
+                <div class="mr-4"><b>博客</b> <a href="https://www.less-bug.com">https://www.less-bug.com</a></div>
+            </div>
+        </header>
+        <article>
+
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">自我介绍</h2>
+                </div>
+                <div class="flex-1">
+                    <p class="leading">
+                        幸会！我是北邮计算机学院的张梓靖。探究和创造均给我带来乐趣，因此自接触就爱上了编程。其最大的吸引力在于：允许我们以代码自由设计规则，亲手构建出一个个精妙而复杂的体系，观察它并有条不紊地运转。<b>我认为自己最大的优点，是好奇心+快速学习的能力</b>。
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">教育经历</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="float-right">2019.8 ~ 2023.6</div>
+                    <h3 class="leading-4 head-title font-bold">北京邮电大学</h3>
+                    <p class="leading">本科 - 计算机学院，智能科学与技术</p>
+                </div>
+            </div>
+
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">工作经历</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="float-right">2022.1 ~ 2022.8</div>
+                    <h3 class="leading-4 head-title font-bold">微软（亚洲）互联网工程院</h3>
+                    <p class="line">软件开发工程师（On-site Intern）/ Bing Viz 大数据团队</p>
+                    <ul>
+                        <li>在我实习期间，有以下主要成果。
+                            <ol>
+                                <li>
+                                    <b>构建基于 Azure Pipeline 的 DevOps 工作流。</b>包括 Airflow DAG、Gateway 微服务、Spark Job 的
+                                    CI/CD；
+                                </li>
+                                <li>
+                                    <b>测试、优化并最终重构我们的 Gateway 微服务。</b>作为我们的大数据基础设施之一，Gateway 是我们的 Telemetrics 提交入口。旧有的
+                                    Gateway
+                                    基于 Javascript 开发，面对一次 Live Site 事件彻底瘫痪。请求量达到 1.2B/天，大约是平时的六倍。
+                                    我们力挽狂澜，做了三个优化：首先是稳定性的综合优化，二是批处理机制的优化。三是 Azure Eventhub
+                                    基础设施去瓶颈。前两个均由我负责完成。最终系统的稳定性和并发性能大大改善。
+                                </li>
+                                <li>
+                                    <b>定位并解决线上 Kibana 集群内存泄漏问题。</b>通过 heapdump 工具结合源码分析，定位出内存泄漏的原因为 verbose
+                                    模式下日志在内存累积未释放。从而修改配置解决。
+                                </li>
+                            </ol>
+                        </li>
+                        <li>另有日常工作和一些其它成果：
+                            <ol>
+                                <li>QPS 性能压测工具</li>
+                                <li>基于内部 MT 集群的 Eventhub（Kafka）的 Spark Streaming 任务编写</li>
+                                <li>Grafana 高可用方案设计与实施</li>
+                                <li>内部使用的 HDFS 远程命令行管理工具</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <p class="line"><b>总结</b> 微软实习期间，我获得了巨大的成长。首先，接触到众多线上代码并经历一次 Live Site，意识到要想开发出经久可靠的软件是极其困难且复杂的事情，从开发、测试、AB-Test 到上线、监控和运维，每一步都需要付出众多人员的努力，也需要我们顶住一些技术之外的压力。同时，我接触并参与了规范化的代码管理流程的构建。还初窥到一些大型软件的架构，比如 Data Pipeline，阅读大型程序源码的能力初露。其次，认识到除了技术之外沟通、合作、领导能力对于普通开发同样要重视。最后，更是认识到，不但要会用现有技术框架，还要知道它怎么实现，这样在遇到问题时才不会手足无措。对业务有深刻的理解，对底层技术原理有求索之心，兼具沟通合作担责能力，才能造就一个优秀的工程师。</p>
+                </div>
+            </div>
+
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">技能</h2>
+                </div>
+                <div class="flex-1">
+                    <h3 class="leading-4 head-title font-bold">技术栈</h3>
+                    <div class="mb-4">
+                        <p class="line"><b>前端</b> 有 React、Vue 开发经验，有 HTML/CSS/JS 使用能力，Uniapp 移动端开发经验，WPF 桌面端开发经验。</p>
+                        <p class="line">关键词：Node、JWT、Vuex、Redux、PixiJS、ThreeJS</p>
+                        <p class="line"><b>后端</b> 有 Golang、PHP、NodeJS 开发经验，封装过自己的 Restful 后端框架，十万行以上代码经验（偏体力活）。以及上面提过的
+                            Gateway 微服务（中间件）设计实现的经历。</p>
+                        <p class="line">
+                            关键词：C/C++、Gin、Hyperf、Flask；MySQL、Neo4J、Redis；Restful；Composer；Spark、Kafka、NSQ、GRPC、Docker、Elastic
+                            Search/Logstash/Kibana</p>
+                        <p class="line"><b>数据库原理</b> 研究过 Redis、InnoDB，正在学习 TinySQL。</p>
+                        <p class="line">关键词：B+Tree、左倾红黑树、索引、跳跃表、Codec</p>
+                        <p class="line"><b>操作系统</b> 研究过 XFS 文件系统，并自己写了一个缩略版。用 C++ 写过一个模拟 CPU 指令的虚拟机。</p>
+                        <p class="line"><b>编译器</b> 用 C++ 及 Java 的编译器开发经验，LLVM 使用经验，LLVM IR emitter 开发经验。</p>
+                        <p class="line">关键词：SSA、汇编、LLVM、Parser、语义分析、静态分析、数据流分析、代码优化</p>
+                        <p class="line"><b>机器智能</b> 出于好奇选学了 AI，内容涵盖：机器学习、NLP、CV 等，掌握相关库的使用经验。</p>
+                        <p class="line">关键词：Numpy、Matplot；SVM、CNN、VAE、GAN、RNN、LSTM、BERT、Reinforcement
+                            Learning；Word2Vec、SGNG分词、文本分类、摘要、序列标注</p>
+                    </div>
+                    <h3 class="leading-4 head-title font-bold">编程语言</h3>
+                    <table>
+                        <caption>能够运用的编程语言及其熟练度</caption>
+                        <thead>
+                            <tr>
+                                <th>熟练度</th>
+                                <th width="350">语言</th>
+                                <th>备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>熟悉</td>
+                                <td>C、C++</td>
+                                <td>了解运行机制和各特性</td>
+                            </tr>
+                            <tr>
+                                <td>常用</td>
+                                <td>Java、Golang、C#、Python、Typescript、Javascript、PHP、Visual Basic、Shell 等</td>
+                                <td>依赖资料完成任务无压力</td>
+                            </tr>
+                            <tr>
+                                <td>偶尔</td>
+                                <td>Rust、Scala、Dart、Powershell</td>
+                                <td>高度依赖资料，低频使用</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">项目经历</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <div class="float-right">2022.7</div>
+                        <h3 class="leading-4 project-title font-bold">Mercuri 编译器</h3>
+                        <p class="line">一个 SysY 语言编译器（C 语言的子集），是编译系统设计赛(华为毕昇杯）的参赛项目。包括：编译器前端、HIR、LIR、Codegen
+                            等部分。目前处于开发进程中。</p>
+                    </div>
+                    <div class="mb-4">
+                        <div class="float-right">2022.3</div>
+                        <h3 class="leading-4 project-title font-bold">PoundFS 文件系统</h3>
+                        <p class="line">一个基于 Extent 和 B+tree 的 Unix 文件系统，基于 libfuse 进行用户态开发。参考了 XFS 的设计，可以说是 XFS
+                            的子集实现。实现了空闲空间管理、诸多结构的 Codec、Inode 分配、数据块分配等。能够进行层级化的文件、文件夹的创建、删除、移动、编辑等功能。</p>
+                        <p class="line">开源地址：<a
+                                href="https://github.com/pluveto/go-poundfs">https://github.com/pluveto/go-poundfs</a>
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="float-right">2022.1</div>
+                        <h3 class="leading-4 project-title font-bold">Upgit 多源上传工具</h3>
+                        <p class="line">能够将本地和剪贴板的对象上传到 Github Repo、Cloud Storage
+                            等位置。支持插件机制，能够通过简单的配置文件创建一个新的上传器。并开发了配套的 VSCode 插件。</p>
+                        <p class="line">开源地址：<a
+                                href="https://github.com/pluveto/upgit">https://github.com/pluveto/upgit</a>
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <div class="float-right">2019.?</div>
+                        <h3 class="leading-4 project-title font-bold">Lilywhite 静态博客生成器</h3>
+                        <p class="line">考虑到开发效率没有手写 Markdown Parser 和 Template Engine，但是实现了拓扑排序思想的递归渲染、分页渲染，系统库和界面库分离，基于
+                            MD5 哈希进行局部渲染。</p>
+                        <p class="line">开源地址：<a
+                                href="https://github.com/pluveto/Lilywhite">https://github.com/pluveto/Lilywhite</a>
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <div class="float-right">2022.6</div>
+                        <h3 class="leading-4 project-title font-bold">T5Summary 文本摘要生成</h3>
+                        <p class="line">基于 BERT 分词和 Google mT5 预训练模型 Finetuning 出的一个文本摘要生成系统。包括基于 Flask + Pytorch
+                            的微服务、Gin 开发的简易认证服务器和 React (Typescript)开发的前端。</p>
+                        <p class="line">开源地址：<a
+                                href="https://github.com/pluveto/t5summary">https://github.com/pluveto/t5summary</a>
+                        </p>
+                    </div>
+                    <div class="mb-4 mt-5">
+                        <h3 class="mb-4 font-bold">其它</h3>
+                        <div class="line">一些顺手完成/难度不大的项目</div>
+                        <table>
+                            <caption class="">其它杂七杂八的项目</caption>
+                            <thead>
+                                <tr>
+                                    <th width="40">语言</th>
+                                    <th width="150">项目名</th>
+                                    <th>介绍</th>
+                                    <th>时间</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>Serverbench</td>
+                                    <td>服务压测工具</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Java</td>
+                                    <td>ps2c</td>
+                                    <td>转译器，将 Pascal 代码翻译为 C 代码</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>BPE v3</td>
+                                    <td>BPE 算法的无监督中文分词工具，并行加速</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>disp-calc</td>
+                                    <td>双目视差图计算算法的实现</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>cloudctl</td>
+                                    <td>云服务器简易管理脚本</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>Copy Query</td>
+                                    <td>离线快速查词工具，利用索引加速 CSV 词库</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>TransMe</td>
+                                    <td>划词在线翻译工具</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>shbot</td>
+                                    <td>Discord 机器人</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>Stint</td>
+                                    <td>前后端均可生成，支持多模块的全栈框架</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>Site Deploy</td>
+                                    <td>静态网站持续部署工具，利用压缩加速</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>dnsr2</td>
+                                    <td>基于红黑树的 DNS Relay 服务器</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>PluvetDaemon</td>
+                                    <td>Windows 进程守护工具</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>BiliBot</td>
+                                    <td>Bilibili 私信机器人</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>C++</td>
+                                    <td>Buggy Telnet</td>
+                                    <td>将任意程序的标准输入输出转换为 TCP 流</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>Device Controller</td>
+                                    <td>基于 TCP 的气体传感器设备集群管理工具</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>C++</td>
+                                    <td>CPU Simulator</td>
+                                    <td>CPU 模拟器，指令虚拟机</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>C++</td>
+                                    <td>GraphicsTablet36Notes</td>
+                                    <td>Win32 驱动程序，模拟出一个手写笔 HID 设备</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>PHP</td>
+                                    <td>Cirno (Swoole)</td>
+                                    <td>路由、校验、业务代码均能生成的开发框架</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Go/PHP</td>
+                                    <td>PasteX</td>
+                                    <td>基于 SQLite/Redis 的 Pastebin 实现</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>Caplos</td>
+                                    <td>Capslock 按键增强工具</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>PHP</td>
+                                    <td>Aceso</td>
+                                    <td>智能仓库管理系统，前端采用 Vue 实现</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>Mathink</td>
+                                    <td>Inkscape 公式渲染插件</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>Shortcut Map</td>
+                                    <td>外置地当前程序显示其快捷键列表</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>PHP</td>
+                                    <td>JeBack</td>
+                                    <td>Bipubipu API 后端，自制签名认证流程</td>
+                                    <td>2019</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>Replace</td>
+                                    <td>批量正则替换工具</td>
+                                    <td>2019</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">其他情况</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <h3 class="leading-4 head-title font-bold">英语能力</h3>
+                        <p class="line">CET4/6 均一次通过，正在备考 GRE。词汇量 10000 以上，熟练阅读英文文档。</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="leading-4 head-title font-bold">基础技能</h3>
+                        <p class="line">能使用 Git 协作，Markdown、Latex 文档编写。熟悉常用的 Linux 发行版。熟悉 Nginx、Docker 部署，熟悉
+                            Kibana、Grafana 等日常工具使用。能使用 Spark、Livy、HDFS、Delta Lake 等常见大数据相关产品。</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="leading-4 head-title font-bold">合作技能</h3>
+                        <p class="line">合作任务中，做组员时充当中坚力量，做组长时能妥善处理工作进度的依赖关系，协调完成。</p>
+                        <p class="line">例如：</p>
+                        <ul>
+                            <li>线性开发的场景：例如编译器课程设计中，主导了核心语义分析和代码生成的开发。同时按照组员能力分配任务，每周开会确定进展，取得 96 分成绩。</li>
+                            <li>前后端可分离时：例如校园导览系统开发过程中，我提前做好接口设计，利用虚拟数据先行开发，后面对接非常顺利。均使用 Git 进行协作，取得 96 分成绩。</li>
+                            <li>紧急任务的情况：例如小学期的 CPU 设计、强化学习 DDQN 任务中，时间紧任务重，遇到疫情不能线下完成，于是利用在线文档远程协作，每天早上八点固定视频开会汇报进度。均取得
+                                90 左右成绩。</li>
+                        </ul>
+                        <div class="small">
+                            我认为小组合作任务，要想调动起队员的积极性，最重要的是明确<b>能给大家带来什么，而不是仅仅分配任务要求他完成</b>。积极性高的情况下，只要分好工定好时间结点，大家就能完成得很好，并且主动找事做。积极性不高的情况下，可以通过大家定期汇报（如每日开会），也能确保项目如期完成。
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="leading-4 head-title font-bold">社会实践</h3>
+                        <p class="line">在学校中，我广交益友，结实了不少非常有想法的同学，一起做了很多有价值的事情*。</p>
+                        <ul>
+                            <li>大二时，我和刘巴特等同学，一起创建了<i>陕西优学邮教教育科技有限公司</i>，业务主要是为各学校提供信息平台如树洞等，从而拿到了信息渠道，能够接一些推广的单子。</li>
+                            <li>大一我的生活还是比较贫苦的，但学习前端后，结合物理竞赛经验，大二下我接了一些北京原力超导公司的前端物理仿真单子，挣了几万块钱。更换了生产力设备，也更确信自己的技术是有价值的。
+                            </li>
+                            <li>大三为了便于签合同，我创建了<i>无色透明软件工作室</i>，接了一个十七万元的合同，但主要是 CURD
+                                感觉对自己技术提升价值不大，所以才开发了一套代码生成系统。也让我认识到不能止步于低端的业务，必须进行更深入的研究。此后不再接这种体力劳动。</li>
+                            <li>大三时，我们的公司迁移为<i>北京市万众聚量科技有限公司</i>，主要打算做校园广告业务。目前一个月流水已有上万元。不过由于我这学期是最忙的，主要由老刘打理。</li>
+                        </ul>
+                        <p class="text-sm">*注：大一时刚开始学习计算机，能力不足，所以没有做太多事情。</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="leading-4 head-title font-bold">业余爱好</h3>
+                        <p class="line">
+                            高中和大一时组建过乐队，担任电吉他手和贝斯手。此外我对哲学比较感兴趣，学习过西方哲学史，康德哲学等。我还对历史比较感兴趣，尤其是春秋历史。高中时我还参加过物理竞赛，拿了省二等奖。也自学过一些心理学，在大二的时候由于众多压力，曾经心理状况非常糟糕，但了解了阿德勒的理论之后，我很快自我调节，同时加强运动锻炼，心理素质大大提升。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+    </div>
+</body>
+
+</html>
