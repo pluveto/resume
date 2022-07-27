@@ -1,4 +1,5 @@
 /**prelight**/
+body{counter-reset: caption;}
 
 blockquote,
 dl,
