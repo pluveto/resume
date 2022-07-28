@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            }
+        }
+    </script>
+    <div class="resume">
+        <header>
+            <div class="flex mb-2">
+                <h1 class="text-4xl">Zhang Zijing</h1>
+            </div>
+            <div class="flex mb-2">
+                <div class="mr-4"><b class="inline-block w-20">Location</b>Beijing, China</div>
+                <div class="mr-4"><b class="inline-block w-16">Email</b> pluvet@foxmail.com</div>
+                <div class="mr-4"><b class="inline-block w-16">Phone</b> +86 *** **** ****</div>
+            </div>
+            <div class="flex">
+                <div class="mr-4"><b class="inline-block w-16">Github</b> <a
+                        href="https://github.com/pluveto">https://github.com/pluveto</a></div>
+                <div class="mr-4"><b>Blog</b> <a href="https://www.less-bug.com">https://www.less-bug.com</a></div>
+            </div>
+        </header>
+        <article>
+
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Intro</h2>
+                </div>
+                <div class="flex-1">
+                    <p class="leading">
+                        Hi, I'm Zijing, Zhang from the School of Computer Science of Beijing University of Posts and Telecommunications. I've been dived into coding research and creation for years. I found that the world of programming brings us power to design rule freely thus ingenious systems are constructed. And in this world, I noticed that my curiosity and ablitiy to learn quickly are my main merits.
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Education Exp.</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="float-right">2019.8 ~ 2023.6</div>
+                    <h3 class="leading-4 head-title font-bold">Beijing University of Posts and Telecommunications
+                    </h3>
+                    <p class="leading">Undergraduate - School of Computer Science, Intelligent Science and Technology</p>
+                </div>
+            </div>
+
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Work Exp.</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="float-right">2022.1 ~ 2022.8</div>
+                    <h3 class="leading-4 head-title font-bold">Microsoft (Search Technology Center of Asia)</h3>
+                    <p class="line">Software Development Engineer (On-site Intern) / Bing Viz Big Data Team</p>
+                    <ul>
+                        <li>During my internship, I had the following major achievements.
+                            <ol>
+                                <li>
+                                    <b>Built Azure Pipeline based DevOps workflows.</b> Including CI/CD for Airflow DAG, Gateway microservices, Spark Jobs.
+                                </li>
+                                <li>
+                                    <b>Testing, optimizing and eventually refactoring our Gateway microservices.</b>
+                                     As one of our Big Data infrastructures, Gateway is our Telemetrics submission portal.
+                                     The legacy Gateway was developed based on Javascript and was completely down in the face of a Live Site event.
+                                     Requests reached 1.2B/day, about six times the usual volume.
+                                     We saved it by making three optimizations:
+                                     first, a comprehensive optimization of stability,
+                                     and second, an optimization of the batching mechanism.
+                                     The third was the debottlenecking of the Azure Eventhub infrastructure.
+                                     The first two were done by me. The final system's stability and concurrency performance were greatly improved.
+                                </li>
+                                <li>
+                                    <b>Locating and solving memory leaks in online Kibana clusters</b> Through heapdump tool and source code analysis,
+                                    we found that the cause of memory leak is that the logs in verbose mode are not released in memory.
+                                    This was solved by tuning the configuration.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>Other daily work and results
+                            <ol>
+                                <li>QPS performance benchmark tool</li>
+                                <li>Spark Streaming task writing for Eventhub (Kafka) based on internal MT clusters
+                                </li>
+                                <li>Grafana high availability solution design and implementation
+                                </li>
+                                <li>HDFS remote command line management tool for internal use
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <p class="line"><b>Summary</b> I have grown tremendously during my internship at Microsoft.
+                        First, I was exposed to a lot of online code and experienced a Live Site, and realized that
+                        it is extremely difficult and complex to develop reliable software that lasts, from development,
+                        testing, AB-Test to go-live, monitoring, and O&M, each step requires a lot of people's efforts
+                        and requires us to withstand some pressure outside of technology. At the same time, I was exposed
+                        to and involved in building a standardized code management process.
+                        I also got a first glimpse of the architecture of some large software projects,
+                        such as Data Pipeline, and my ability to read the source code of large programs.
+                        
+                        Secondly, I realized that in addition to technical skills, communication, cooperation
+                        and leadership skills are also important for general development.
+                        
+                        Finally, I realized that I should not only use the existing technical framework,
+                        but also know how to implement it, so that I will not be overwhelmed when
+                        I encounter problems. A deep understanding of the business, a search for the
+                        underlying technical principles, and the ability to communicate, cooperate
+                        and take responsibility can make an excellent engineer.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Skills</h2>
+                </div>
+                <div class="flex-1">
+                    <h3 class="leading-4 head-title font-bold">Tech Stack</h3>
+                    <div class="mb-4">                        
+                        <p class="line"><b>Backend</b> Experience in Golang, PHP, NodeJS development, designed own Restful backend framework,
+                            more than 100,000 lines of code experience, including the above mentioned Gateway microservice (middleware).
+                        </p>
+                        <p class="line">
+                            Keywords: C/C++, Gin, Hyperf, Flask; MySQL, Neo4J, Redis; Restful; Composer; Spark, Kafka, NSQ, GRPC, Docker, Elastic Search/Logstash/Kibana; OAuth, JWT</p>
+                        <p class="line"><b>Database</b> Studied Redis, InnoDB, learning TinySQL.</p>
+                        <p class="line">Keywords: Parsing, B+Tree,left-leaning Red-Black tree, indexing, skiplist, Codec, LRU</p>
+                        <p class="line"><b>Frontend</b>Experience with React, Vue development, HTML/CSS/JS, Uniapp mobile development, WPF desktop development.</p>
+                        <p class="line">Keywords: Node, JWT, Vuex, Redux, PixiJS, ThreeJS</p>
+                        <p class="line"><b>OS/FS</b> Studied XFS file system and wrote an abbreviated version by myself. Wrote a virtual machine in C++ to simulate CPU instructions.</p>
+                        <p class="line"><b>Compiler</b> Experience in compiler development with C++ and Java, LLVM experience, LLVM IR emitter development experience.</p>
+                        <p class="line">Keywords: SSA, assembly, LLVM, Parser, semantic analysis, static analysis, data flow analysis, code optimization</p>
+                        <p class="line"><b>AI</b> Out of curiosity, I studied AI for one year, covering: machine learning, NLP, CV, etc. I have experience in using related libraries.
+                        </p>
+                        <p class="line">Keywords: Numpy, Matplot; SVM, CNN, VAE, GAN, RNN, LSTM, BERT, Reinforcement
+                            Learning; Word2Vec, SGNG Tokenizer, Text Categoring, Summary Extraction, Sequence Annotation</p>
+                    </div>
+                    <h3 class="leading-4 head-title font-bold">Programming Languages</h3>
+                    <table>
+                        <caption>PL & proficiency</caption>
+                        <thead>
+                            <tr>
+                                <th>Proficiency</th>
+                                <th width="350">PL</th>
+                                <th>Remarks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Skilled</td>
+                                <td>C, C++</td>
+                                <td>Understand the operation mechanism and features</td>
+                            </tr>
+                            <tr>
+                                <td>Commonly</td>
+                                <td>Java, Golang, C#, Python, Typescript, Javascript, PHP, Visual Basic, Shell etc</td>
+                                <td>Rely on materials to easily complete tasks</td>
+                            </tr>
+                            <tr>
+                                <td>Occasionally</td>
+                                <td>Rust, Scala, Dart, Powershell</td>
+                                <td>Rely on materials</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Project Exp.</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <div class="float-right">2022.7</div>
+                        <h3 class="leading-4 project-title font-bold">Mercuri Compiler</h3>
+                        <p class="line">A SysY language compiler (a subset of C), a project for the Compiled System Design Competition (Huawei Bison Cup). It includes: compiler front-end, HIR, LIR, Codegen and other parts. It is currently in the development process.</p>
+                    </div>
+                    <div class="mb-4">
+                        <div class="float-right">2022.3</div>
+                        <h3 class="leading-4 project-title font-bold">Pound Filesystem</h3>
+                        <p class="line">A Unix file system based on Extent and B+tree, based on libfuse for user state development. It is a subset implementation of XFS, which is based on the design of XFS. It implements free space management, Codec of many structures, Inode allocation, data block allocation, etc. It is able to create, delete, move, edit, etc. files and folders in a hierarchical manner.</p>
+                        <p class="line">Opensource at<a
+                                href="https://github.com/pluveto/go-poundfs">https://github.com/pluveto/go-poundfs</a>
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="float-right">2022.1</div>
+                        <h3 class="leading-4 project-title font-bold">Upgit Multi-Source Uploader
+                        </h3>
+                        <p class="line">Upload local and clipboard objects to Github Repo, Cloud Storage and other locations. Supports a plugin mechanism to be able to create a new uploader with a simple configuration file. A companion VSCode plugin has also been developed.</p>
+                        <p class="line">Opensource at<a
+                                href="https://github.com/pluveto/upgit">https://github.com/pluveto/upgit</a>
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <div class="float-right">2019.?</div>
+                        <h3 class="leading-4 project-title font-bold">Lilywhite Static Blog Generator</h3>
+                        <p class="line">Implements topological sorting idea of recursive rendering, paged rendering, separation of system library and interface library, local rendering based on MD5 hash.</p>
+                        <p class="line">Opensource at<a
+                                href="https://github.com/pluveto/Lilywhite">https://github.com/pluveto/Lilywhite</a>
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <div class="float-right">2022.6</div>
+                        <h3 class="leading-4 project-title font-bold">T5Summary Extractor</h3>
+                        <p class="line">A text summarization generation system based on BERT tokenizer and Google mT5 pre-training model Finetuning. 
+                            Includes microservices based on Flask + Pytorch, a simple authentication server developed by Gin and a front-end developed 
+                            by React (Typescript).</p>
+                        <p class="line">Opensource at<a
+                                href="https://github.com/pluveto/t5summary">https://github.com/pluveto/t5summary</a>
+                        </p>
+                    </div>
+                    <div class="mb-4 mt-5">
+                        <h3 class="mb-4 font-bold">Others</h3>
+                        <div class="line">Some projects that are not too difficult to complete</div>
+                        <table>
+                            <caption class="">Projects</caption>
+                            <thead>
+                                <tr>
+                                    <th width="40">PL</th>
+                                    <th width="150">Name</th>
+                                    <th>Description</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>Serverbench</td>
+                                    <td>Golang Serverbench service pressure testing tool                                    </td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Java</td>
+                                    <td>ps2c</td>
+                                    <td>Translator to translate Pascal code to C</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>BPE v3</td>
+                                    <td>Unsupervised Chinese word splitting tool for BPE algorithm, parallel accelerated</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>disp-calc</td>
+                                    <td>Implementation of binocular parallax map computation algorithm </td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>cloudctl</td>
+                                    <td>Cloud server simple management script</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>Copy Query</td>
+                                    <td>Fast word search tool with indexing to accelerate CSV accessing</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>TransMe</td>
+                                    <td>Select words and translate</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>shbot</td>
+                                    <td>Discord bot</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>Stint</td>
+                                    <td>With front-and back-end generation, multi-module support, full-stack framework</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>Site Deploy</td>
+                                    <td>Static website continuous deployment tool, using compression</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>dnsr2</td>
+                                    <td>Red-black tree based DNS Relay server </td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>PluvetDaemon</td>
+                                    <td>Windows process daemon without service</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>BiliBot</td>
+                                    <td>Bilibili private message bot</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>C++</td>
+                                    <td>Buggy Telnet</td>
+                                    <td>Convert stdio into TCP stream</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>Device Controller</td>
+                                    <td>TCP-based Cluster Management Tool for Gas Sensor Devices</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>C++</td>
+                                    <td>CPU Simulator</td>
+                                    <td>CPU Binary instruction execution simulator</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>C++</td>
+                                    <td>GraphicsTablet36Notes</td>
+                                    <td>Win32 driver to simulate a stylus HID device</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>PHP</td>
+                                    <td>Cirno (Swoole)</td>
+                                    <td>Another backend framework with generating routes / guard code / business code</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Go/PHP</td>
+                                    <td>PasteX</td>
+                                    <td>Pastebin based on SQLite/Redis</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>Caplos</td>
+                                    <td>Capslock key enforcement</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>PHP</td>
+                                    <td>Aceso</td>
+                                    <td>Smart warehouse management system with Vue + PHP</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>Mathink</td>
+                                    <td>Inkscape formula renderer client</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>Shortcut Map</td>
+                                    <td>Externally display a list of shortcuts for the current application </td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>PHP</td>
+                                    <td>JeBack</td>
+                                    <td>Bipubipu API backend, homebrew signature authentication process</td>
+                                    <td>2019</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>Replace</td>
+                                    <td>Batch regex replacement </td>
+                                    <td>2019</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Further Info</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <h3 class="leading-4 head-title font-bold">English Proficiency</h3>
+                        <p class="line">CET4/6 tests all passed once, preparing for GRE. vocabulary 10000+, proficient in reading and writing English documents.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="leading-4 head-title font-bold">Basic Skills</h3>
+                        <p class="line">Ability to use Git, Markdown, Latex documentation.
+                            Familiar with common Linux distributions. Familiar with using Nginx, Docker deployments, Kibana, Grafana and other daily tools.
+                            Ability to use common Big Data related products such as Spark, Livy, HDFS, Delta Lake, etc.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="leading-4 head-title font-bold">Collaboration ability</h3>
+                        <p class="line">Act as the backbone in collaborative tasks as a team member, and be able to properly manage work schedule dependencies and coordinate completion as a team leader.</p>
+                        <p class="line">Examples:</p>
+                        <ul>
+                            <li>Linear development scenarios: for example, lead the development of core semantic analysis and code generation in compiler course design. Also assigned tasks according to group members' abilities, met weekly to determine progress, and achieved a score of 96.</li>
+                            <li>Front/back-end separated scenarios: for example, during the development of the campus tour system, I designed the interface in advance and used virtual data to develop it first, and the interface was very smooth. I used Git to collaborate and got a score of 96.</li>
+                            <li>Urgent tasks scenarios: for example, in the CPU design and reinforcement learning DDQN tasks in the primary period, the time was tight and the tasks could not be completed offline when there was an epidemic. All of them achieved about 90.</li>                            
+                        </ul>
+                        <div class="small">
+                            I believe that in order to motivate the team members, the most important thing is to clarify what can be brought to our teammates,
+                            instead of only assigning tasks. With a high motivation, as long as the work is divided and the time is set, 
+                            everyone will be able to make it brilliantly and take the initiative to find things to do.
+                            Even without so, regular reporting (such as daily scrums) can also ensure that the project is completed on time.
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="leading-4 head-title font-bold">Social Practice</h3>
+                        <p class="line">In school, I made friends with a lot of very thoughtful peers and did a lot of valuable things together.</p>
+                        <ul>
+                            <li>In my sophomore year, I, together with Liu and some other students
+                                 created Shaanxi Youxueyoujiao Technology Co., Ltd. The business is mainly to provide information platforms
+                                 such as treeholes for various schools, thus getting information channels and being able to take some promotion orders.。</li>
+                            <li>My freshman year was still relatively poor, but after learning the front end, combined with the physics competition experience,
+                                I took some front-end physics simulation orders from Beijing Force Superconductor under my sophomore year and earned tens of thousands of dollars.
+                                Replaced productivity equipment and became more convinced that my skills were valuable.
+                            </li>
+                            <li>In my junior year, I founded Incolore Software Studio to facilitate contract business, and used to took a contract of 170,000 CNY,
+                                but then I felt that CURDs had been not valuable for my technical improvement, so I developed a code generation system.
+                                It also made me realize that I can't stop at the low end of the business and must conduct more in-depth research.
+                                Since then, I have not taken up this kind of onerous work.</li>
+                            <li>This year, our company was renamed to Beijing WanzhongJuquan Technology Co, Ltd. At present, the monthly flow of cash has reached tens of thousands of yuan.
+                                However, since I am the busiest this semester, it is mainly taken care of by Liu.
+                                </li>
+                        </ul>
+                        <p class="text-sm">*Note: I just started to study computer in my freshman year, so I didn't do much.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="leading-4 head-title font-bold">Amateur hobbies</h3>
+                        <p class="line">
+                            I formed a band in high school and freshman year as an electric guitarist and bassist.
+                            In addition, I am interested in philosophy, and have studied the history of Western philosophy, Kantian philosophy, etc.
+                            I am interested in history, especially the history of China of the Spring and Autumn Period.
+                            In high school, I participated in the physics competition and won the second prize in my province.
+                            I also studied some psychology on my own. In my sophomore year, I once fell into anxiety and pain, but soon after I learned about Adler's theory,
+                            I quickly self-regulated and strengthened myself and become empowered.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+    </div>
+</body>
+
+</html>
