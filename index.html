@@ -22,7 +22,7 @@
     <div class="resume">
         <header>
             <div class="flex mb-2">
-                <h1 class="text-4xl">张梓靖<span class="text-lg ml-2">意向岗位：后端开发工程师</span></h1>
+                <h1 class="text-4xl">张梓靖<span class="text-lg ml-2">意向岗位：后端开发工程师等，均有兴趣，接受调岗。</span></h1>
             </div>
             <div class="flex mb-2">
                 <div class="mr-4"><b class="inline-block w-16">工作地点</b> 北京</div>
@@ -66,32 +66,33 @@
                 <div class="flex-1">
                     <div class="float-right">2022.1 ~ 2022.8</div>
                     <h3 class="leading-4 head-title font-bold">微软（亚洲）互联网工程院</h3>
-                    <p class="line">软件开发工程师（On-site Intern）/ Bing Viz 大数据团队</p>
+                    <p class="line">软件开发工程师（On-site Intern）/ WebXT 部门 BingViz 大数据团队</p>
                     <ul>
-                        <li>在我实习期间，有以下主要成果。
+                        <li>在我实习期间，主要负责<b>后端基础设施相关开发和维护</b>，有以下主要成果。
                             <ol>
                                 <li>
-                                    <b>构建基于 Azure Pipeline 的 DevOps 工作流。</b>包括 Airflow DAG、Gateway 微服务、Spark Job 的
-                                    CI/CD；
-                                </li>
-                                <li>
-                                    <b>测试、优化并最终重构我们的 Gateway 微服务。</b>作为我们的大数据基础设施之一，Gateway 是我们的 Telemetrics 提交入口。旧有的
+                                    <b>迁移、测试、优化并最终重构我们的 Gateway 微服务。</b>作为我们的大数据基础设施之一，Gateway 是我们的 Telemetrics 提交入口。旧有的
                                     Gateway
                                     基于 Javascript 开发，面对一次 Live Site 事件彻底瘫痪。请求量达到 1.2B/天，大约是平时的六倍。
                                     我们力挽狂澜，做了三个优化：首先是稳定性的综合优化，二是批处理机制的优化。三是 Azure Eventhub
                                     基础设施去瓶颈。前两个均由我负责完成。最终系统的稳定性和并发性能大大改善。
                                 </li>
                                 <li>
-                                    <b>定位并解决线上 Kibana 集群内存泄漏问题。</b>通过 heapdump 工具结合源码分析，定位出内存泄漏的原因为 verbose
-                                    模式下日志在内存累积未释放。从而修改配置解决。
+                                    <b>构建基于 Azure Pipeline 的 DevOps 工作流。</b>包括 Airflow DAG、Gateway 微服务、Spark Job 的
+                                    CI/CD；也包括编写配置文件、运维脚本（Python, shell）等。
+                                </li>
+                                <li>
+                                    <b>定位并解决线上 Kibana 集群内存泄漏问题。</b>此问题困扰我们一段时间，通过几次升级和 issue 反馈均未解决。我接手之后，通过 heapdump
+                                    工具结合源码分析，定位出内存泄漏的原因为 verbose
+                                    模式下日志字符串在内存累积未释放。因此在生产环境关闭 verbose 即可解决。
                                 </li>
                             </ol>
                         </li>
-                        <li>另有日常工作和一些其它成果：
+                        <li>另有日常工作和一些比较琐碎的成果：
                             <ol>
-                                <li>Grafana 高可用集群搭建/数据迁移</li>
-                                <li>QPS 性能压测工具</li>
+                                <li>Grafana 高可用方案设计实施，包括集群搭建，Nginx 配置和数据迁移等</li>
                                 <li>基于内部 MT 集群的 Eventhub（Kafka）的 Spark Streaming 任务编写</li>
+                                <li>基于 Golang 开发了一个 QPS 性能压测工具</li>
                                 <li>Grafana 高可用方案设计与实施</li>
                                 <li>内部使用的 HDFS 远程命令行管理工具</li>
                             </ol>
@@ -112,21 +113,20 @@
                 <div class="flex-1">
                     <h3 class="leading-4 head-title font-bold">技术栈</h3>
                     <div class="mb-4">
-                        <p class="line"><b>前端</b> 有 React、Vue 开发经验，有 HTML/CSS/JS 使用能力，Uniapp 移动端开发经验，WPF 桌面端开发经验。</p>
+                        <p class="line"><b>编译器</b> 比较深入。实现过多重编译优化算法，熟悉静态分析（控制流分析、数据流分析、活跃分析），实现过 LSRA 和图着色寄存器分配算法，熟悉并实现过常见的编译优化算法。</p>
+                        <p class="line"><b>前端</b> 能够运用。有 React、Vue2 开发经验，能使用 HTML/CSS/JS ，Uniapp 移动端开发经验，WPF 桌面端开发经验。（此简历就是自己设计的）</p>
                         <p class="line">关键词：Node、JWT、Vuex、Redux、PixiJS、ThreeJS</p>
-                        <p class="line"><b>后端</b> 有 Golang、PHP、NodeJS 开发经验，封装过自己的 Restful 后端框架，十万行以上代码经验（偏体力活）。以及上面提过的
+                        <p class="line"><b>后端</b> 能够运用。有 Golang、PHP、NodeJS 开发经验，封装过自己的 Restful 后端框架，十万行以上代码经验（偏体力活）。以及上面提过的
                             Gateway 微服务（中间件）设计实现的经历。</p>
                         <p class="line">
                             关键词：C/C++、Gin、Hyperf、Flask；MySQL、Neo4J、Redis；Restful；Composer；Spark、Kafka、NSQ、GRPC、Docker、Elastic
                             Search/Logstash/Kibana</p>
-                        <p class="line"><b>数据库原理</b> 研究过 Redis、InnoDB，正在学习 TinySQL。</p>
-                        <p class="line">关键词：B+Tree、左倾红黑树、索引、跳跃表、Codec</p>
-                        <p class="line"><b>操作系统</b> 研究过 XFS 文件系统，并自己写了一个缩略版。用 C++ 写过一个模拟 CPU 指令的虚拟机。</p>
-                        <p class="line"><b>编译器</b> 用 C++ 及 Java 的编译器开发经验，LLVM 使用经验，LLVM IR emitter 开发经验。</p>
-                        <p class="line">关键词：SSA、汇编、LLVM、Parser、语义分析、静态分析、数据流分析、代码优化</p>
-                        <p class="line"><b>机器智能</b> 出于好奇选学了 AI，内容涵盖：机器学习、NLP、CV 等，掌握相关库的使用经验。</p>
+                        <p class="line"><b>数据库原理</b> 粗浅了解。处于好奇，研究过 Redis、InnoDB。</p>
+                        <p class="line">关键词：B+Tree、红黑树、索引、跳跃表、Codec、磁盘结构</p>
+                        <p class="line"><b>操作系统</b> 文件系统方面：研究过 XFS 文件系统，并自己写了一个缩略版。组成原理方面，用 C++ 写过一个模拟 CPU 指令的虚拟机。</p>
+                        <p class="line"><b>机器智能</b> 出于好奇选学了 AI，内容涵盖：机器学习、NLP、CV 等，掌握相关库的使用经验。但是数学推导方面仍在学习。</p>
                         <p class="line">关键词：Numpy、Matplot；SVM、CNN、VAE、GAN、RNN、LSTM、BERT、Reinforcement
-                            Learning；Word2Vec、SGNG分词、文本分类、摘要、序列标注</p>
+                            Learning；Word2Vec、SGNG分词、文本分类、摘要、序列标注。</p>
                     </div>
                     <h3 class="leading-4 head-title font-bold">编程语言</h3>
                     <table>
@@ -158,7 +158,28 @@
                     </table>
                 </div>
             </div>
-
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">获奖经历</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <div class="float-right">2022.8</div>
+                        <h3 class="leading-4 project-title font-bold">2022 全国大学生计算机系统能力大赛-编译系统设计赛 - 三等奖</h3>
+                        <div class="line"><b>项目名称：</b>Mercuri 编译器（身份：队长）</div>
+                        <div class="line"><b>项目地址：</b><a href="https://course.educg.net/course/6-124">https://course.educg.net/course/6-124</a></div>
+                        <div class="line">这个比赛虽然在圈外不是很知名，但我个人认为是我参加过的难度和挑战最大的比赛。含金量不亚于 ACM 等。从工作量、架构难度、技术难度方面均富有挑战，不但需要大量的实践，还需要阅读大量的前沿论文，并转化为代码，与来自清华、北航的优秀同辈人角逐竞技。</div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="float-right">2022.7</div>
+                        <h3 class="leading-4 project-title font-bold">第八届中国国际“互联网+”大学生创新创业大赛北京市 - 金奖</h3>
+                        <div class="line"><b>项目名称：</b>起舞元宇宙-智能化数字虚拟人动作引擎（身份：队员）</div>
+                        <div class="line"><b>项目地址：</b><a href="https://cy.ncss.cn/memberproject/detail/8a808087806fb70d0180dd2df09d3990">https://cy.ncss.cn/memberproject/detail/8a808087806fb70d0180dd2df09d3990</a></div>
+                        <div class="line">主要负责一些后端开发的工作，兼培训团队成员开发的工作。</div>
+                    </div>
+                    <i>*其余一些校级的比赛省略</i>
+                </div>
+            </div>
             <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
                 <div class="title-left">
                     <h2 class="leading-4 text-xl">项目经历</h2>
@@ -167,8 +188,7 @@
                     <div class="mb-4">
                         <div class="float-right">2022.7</div>
                         <h3 class="leading-4 project-title font-bold">Mercuri 编译器</h3>
-                        <p class="line">一个 SysY 语言编译器（C 语言的子集），是编译系统设计赛(华为毕昇杯）的参赛项目。包括：编译器前端、HIR、LIR、Codegen
-                            等部分。目前处于开发进程中。</p>
+                        <p class="line">一个 SysY 语言编译器（C 语言的子集），是编译系统设计赛(华为毕昇杯）的参赛项目。整体架构类似 LLVM，包括：前端词法语法分析、AST IR、DST IR、SSA IR、LIR、ASM。我们运用了控制流分析（包括支配分析、副作用分析、跨过程分析等）、数据流分析（包括活跃分析、别名分析、循环分析）等技术，实现了 GVN（包括常数传播、指令化简，配合死块消除优化迭代到不动点），复写传播、DCE（死代码消除）、循环展开和函数内联。实现了局部寄存器分配和图着色寄存器分配两种策略，最终性能达到了优化前的 400%-1000% 不等，获得三等奖。</p>
                     </div>
                     <div class="mb-4">
                         <div class="float-right">2022.3</div>
@@ -420,7 +440,8 @@
                         <ul>
                             <li><b>线性开发的场景</b>：例如编译器课程设计中，主导了核心语义分析和代码生成的开发。同时按照组员能力分配任务，每周开会确定进展，取得 96 分成绩。</li>
                             <li><b>前后端可分离时</b>：例如校园导览系统开发过程中，我提前做好接口设计，利用虚拟数据先行开发，后面对接非常顺利。均使用 Git 进行协作，取得 96 分成绩。</li>
-                            <li><b>紧急任务的情况</b>：例如小学期的 CPU 设计、强化学习 DDQN 任务中，时间紧任务重，遇到疫情不能线下完成，于是利用在线文档远程协作，每天早上八点固定视频开会汇报进度。均取得
+                            <li><b>紧急任务的情况</b>：例如小学期的 CPU 设计、强化学习 DDQN
+                                任务中，时间紧任务重，遇到疫情不能线下完成，于是利用在线文档远程协作，每天早上八点固定视频开会汇报进度。均取得
                                 90 左右成绩。</li>
                         </ul>
                         <div class="small">
@@ -445,8 +466,12 @@
                         <p class="line">
                             我的爱好广泛，以自学为主要乐趣，无不良嗜好。
                         </p>
-                        <p class="line">高中和大一时组建过乐队，担任电吉他手和贝斯手。我对哲学感兴趣，学习过西方哲学史，包括康德哲学等。高中时因兴趣参加过物理竞赛，荣获省二等奖。此外，也自学过一些心理学，用于自我调节以及更好地待人处事。</p>
-                        <p class="line">此外，对待重要事务我能沉下心有毅力。半年来我月均学习（含复习）一千个单词未曾中断。曾经参加打卡背单词活动，每天三百个单词，群中 212 人，竟几尽未能坚持，而我是最终按时完成、落实下来的 6 人之一。高中和大学组乐队时期，但凡有演出都认真练琴，广受好评。但凡小组活动，从来都是牵头完成的人之一。一起完成任务之后，我能收获充足的成就感。</p>
+                        <p class="line">
+                            高中和大一时组建过乐队，担任电吉他手和贝斯手。我对哲学感兴趣，学习过西方哲学史，包括康德哲学等。高中时因兴趣参加过物理竞赛，荣获省二等奖。此外，也自学过一些心理学，用于自我调节以及更好地待人处事。
+                        </p>
+                        <p class="line">此外，对待重要事务我能沉下心有毅力。半年来我月均学习（含复习）一千个单词未曾中断。曾经参加打卡背单词活动，每天三百个单词，群中 212
+                            人，竟几尽未能坚持，而我是最终按时完成、落实下来的 6
+                            人之一。高中和大学组乐队时期，但凡有演出都认真练琴，广受好评。但凡小组活动，从来都是牵头完成的人之一。一起完成任务之后，我能收获充足的成就感。我相信，在工作中也能稳健完成合理任务量。</p>
                     </div>
                 </div>
 
