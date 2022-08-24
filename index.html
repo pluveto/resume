@@ -27,7 +27,12 @@
             <div class="flex mb-2">
                 <div class="mr-4"><b class="inline-block w-16">工作地点</b> 北京</div>
                 <div class="mr-4"><b class="inline-block w-8">邮箱</b> pluvet@foxmail.com</div>
-                <div class="mr-4"><b class="inline-block w-8">电话</b> +86 *** **** ****</div>
+                <div class="mr-4"><b class="inline-block w-8">电话</b> +86 185 8738 7858</div>
+            </div>
+            <div class="flex mb-2">
+                <div class="mr-4"><b class="inline-block w-8">性别</b> 男</div>
+                <div class="mr-4"><b class="inline-block w-8">民族</b> 汉</div>
+                <div class="mr-4"><b class="inline-block">出生日期</b> 2000 年 5 月 5 日</div>
             </div>
             <div class="flex">
                 <div class="mr-4"><b class="inline-block w-16">Github</b> <a
@@ -43,7 +48,7 @@
                 </div>
                 <div class="flex-1">
                     <p class="leading">
-                        幸会！我是北邮计算机学院的张梓靖。探究和创造均给我带来乐趣，因此自接触就爱上了编程。其最大的吸引力在于：允许我们以代码自由设计规则，亲手构建出一个个精妙而复杂的体系，观察它并有条不紊地运转。<b>我认为自己最大的优点，是好奇心+快速学习的能力</b>。
+                        幸会！我是北邮计算机学院的张梓靖。探究和创造均给我带来乐趣，因此自接触就爱上了编程。其最大的吸引力在于：允许我们以代码自由设计规则，亲手构建出一个个精妙而复杂的体系，观察它并有条不紊地运转。<b>我认为自己最大的优点，是好奇心+执行力+快速学习的能力</b>。
                     </p>
                 </div>
             </div>
@@ -93,14 +98,13 @@
                                 <li>Grafana 高可用方案设计实施，包括集群搭建，Nginx 配置和数据迁移等</li>
                                 <li>基于内部 MT 集群的 Eventhub（Kafka）的 Spark Streaming 任务编写</li>
                                 <li>基于 Golang 开发了一个 QPS 性能压测工具</li>
-                                <li>Grafana 高可用方案设计与实施</li>
-                                <li>内部使用的 HDFS 远程命令行管理工具</li>
+                                <li>内部使用的 HDFS 远程命令行管理工具、批量服务创建工具等等</li>
                             </ol>
                         </li>
                     </ul>
                     <p class="line"><b>总结</b> 微软实习期间，我获得了巨大的成长。首先，接触到众多线上代码并经历一次 Live
                         Site，意识到要想开发出经久可靠的软件是极其困难且复杂的事情，从开发、测试、AB-Test
-                        到上线、监控和运维，每一步都需要付出众多人员的努力，也需要我们顶住一些技术之外的压力。同时，我接触并参与了规范化的代码管理流程的构建。还初窥到一些大型软件的架构，比如 Data
+                        到上线、监控和运维，每一步都需要付出众多人员的努力。同时，我接触并参与了规范化的代码管理流程的构建。还初窥到一些大型软件的架构，比如 Data
                         Pipeline，阅读大型程序源码的能力初露。其次，认识到除了技术之外沟通、合作、领导能力对于普通开发同样要重视。最后，更是认识到，不但要会用现有技术框架，还要知道它怎么实现，这样在遇到问题时才不会手足无措。对业务有深刻的理解，对底层技术原理有求索之心，兼具沟通合作担责能力，才能造就一个优秀的工程师。
                     </p>
                 </div>
@@ -108,25 +112,63 @@
 
             <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
                 <div class="title-left">
+                    <h2 class="leading-4 text-xl">获奖经历</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <div class="float-right">2022.8</div>
+                        <h3 class="leading-4 project-title font-bold">2022 全国大学生计算机系统能力大赛-编译系统设计赛 - 三等奖</h3>
+                        <p class="line"><b>项目名称：</b>Mercuri 编译器（身份：队长）</p>
+                        <p class="line"><b>项目地址：</b><a
+                                href="https://course.educg.net/course/6-124">https://course.educg.net/course/6-124</a>
+                        </p>
+                        <p class="line">由教育部高等学校计算机类专业教学指导委员会和系统能力培养研究专家组共同发起，
+                            以学科竞赛推动专业建设和计算机领域创新人才培养体系改革、
+                            培育我国高端芯片及核心系统的技术突破与产业化后备人才为目标,面向高校大学生举办的全国性大赛。</p>
+                        <p class="line">
+                            我个人认为其从工作量、架构难度、技术难度方面均富有挑战，不但需要大量的实践，还需要阅读大量的前沿论文，并转化为代码，与来自清华、北航等大学的优秀同辈人角逐竞技。
+                        </p>
+                        <p class="line">这个项目中，我负责了众多核心工作，简单的包括语义分析类型检查，也包括相对复杂的流分析、活跃分析等，以及大多数的编译优化。</p>
+                    </div>
+                    <div class="mb-4">
+                        <div class="float-right">2022.7</div>
+                        <h3 class="leading-4 project-title font-bold">第八届中国国际“互联网+”大学生创新创业大赛北京市 - 金奖</h3>
+                        <p class="line"><b>项目名称：</b>起舞元宇宙-智能化数字虚拟人动作引擎（身份：队员）</p>
+                        <p class="line"><b>项目地址：</b><a
+                                href="https://cy.ncss.cn/memberproject/detail/8a808087806fb70d0180dd2df09d3990">https://cy.ncss.cn/memberproject/detail/8a808087806fb70d0180dd2df09d3990</a>
+                        </p>
+                        <p class="line">主要负责一些后端开发的工作，使用了自己二次封装的框架和代码生成器，兼培训团队成员开发的工作。</p>
+                    </div>
+                    <i>*其余一些省级以下的比赛省略</i>
+                </div>
+            </div>
+            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
+                <div class="title-left">
                     <h2 class="leading-4 text-xl">技能</h2>
                 </div>
                 <div class="flex-1">
                     <h3 class="leading-4 head-title font-bold">技术栈</h3>
                     <div class="mb-4">
-                        <p class="line"><b>编译器</b> 比较深入。实现过多重编译优化算法，熟悉静态分析（控制流分析、数据流分析、活跃分析），实现过 LSRA 和图着色寄存器分配算法，熟悉并实现过常见的编译优化算法。</p>
-                        <p class="line"><b>前端</b> 能够运用。有 React、Vue2 开发经验，能使用 HTML/CSS/JS ，Uniapp 移动端开发经验，WPF 桌面端开发经验。（此简历就是自己设计的）</p>
+                        <p class="line"><b>编译器</b> 比较深入。实现过多种编译优化算法，熟悉静态分析（控制流分析、数据流分析、活跃分析），实现过 LSRA
+                            和图着色寄存器分配算法，熟悉并实现过常见的编译优化算法。</p>
+                        <p class="line"><b>前端</b> 能够运用。有 React、Vue2 开发经验，能使用 HTML/CSS/JS ，Uniapp 移动端开发经验，WPF
+                            桌面端开发经验。（此简历就是自己设计的）</p>
                         <p class="line">关键词：Node、JWT、Vuex、Redux、PixiJS、ThreeJS</p>
-                        <p class="line"><b>后端</b> 能够运用。有 Golang、PHP、NodeJS 开发经验，封装过自己的 Restful 后端框架，十万行以上代码经验（偏体力活）。以及上面提过的
+                        <p class="line"><b>后端</b> 能够运用。有 Golang、PHP、NodeJS 开发经验，封装过自己的 Restful
+                            后端框架，十万行以上代码经验（偏体力活）。以及上面提过的
                             Gateway 微服务（中间件）设计实现的经历。</p>
                         <p class="line">
-                            关键词：C/C++、Gin、Hyperf、Flask；MySQL、Neo4J、Redis；Restful；Composer；Spark、Kafka、NSQ、GRPC、Docker、Elastic
+                            关键词：C/C++、Gin、Hyperf、Flask；MySQL、Neo4J、Redis；Restful、Spark、Kafka、NSQ、GRPC、Docker、Elastic
                             Search/Logstash/Kibana</p>
-                        <p class="line"><b>数据库原理</b> 粗浅了解。处于好奇，研究过 Redis、InnoDB。</p>
-                        <p class="line">关键词：B+Tree、红黑树、索引、跳跃表、Codec、磁盘结构</p>
+                        <p class="line"><b>数据库原理</b> 粗浅了解。出于好奇，研究过 Redis、InnoDB。</p>
+                        <p class="line">关键词：B+Tree、红黑树、索引、跳跃表、Codec、磁盘结构设计</p>
                         <p class="line"><b>操作系统</b> 文件系统方面：研究过 XFS 文件系统，并自己写了一个缩略版。组成原理方面，用 C++ 写过一个模拟 CPU 指令的虚拟机。</p>
                         <p class="line"><b>机器智能</b> 出于好奇选学了 AI，内容涵盖：机器学习、NLP、CV 等，掌握相关库的使用经验。但是数学推导方面仍在学习。</p>
                         <p class="line">关键词：Numpy、Matplot；SVM、CNN、VAE、GAN、RNN、LSTM、BERT、Reinforcement
                             Learning；Word2Vec、SGNG分词、文本分类、摘要、序列标注。</p>
+                        <div class="pline">
+                            总结：我对各种技术均报以强烈的好奇心，无法容忍存在比较大的知识盲区，学习范围比较广，并在个别分支有一定深入。但实践经验和原理深入仍需努力。计算机的世界是无限而精彩的，我们穷其一生也只能看到其中的一隅，尽管如此，我希望不把自己局限在一个狭窄的领域，我更关注各个领域之间的共性，因此无论各种技术岗位，只要有时间我都愿意深入研究。
+                        </div>
                     </div>
                     <h3 class="leading-4 head-title font-bold">编程语言</h3>
                     <table>
@@ -160,35 +202,16 @@
             </div>
             <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
                 <div class="title-left">
-                    <h2 class="leading-4 text-xl">获奖经历</h2>
-                </div>
-                <div class="flex-1">
-                    <div class="mb-4">
-                        <div class="float-right">2022.8</div>
-                        <h3 class="leading-4 project-title font-bold">2022 全国大学生计算机系统能力大赛-编译系统设计赛 - 三等奖</h3>
-                        <div class="line"><b>项目名称：</b>Mercuri 编译器（身份：队长）</div>
-                        <div class="line"><b>项目地址：</b><a href="https://course.educg.net/course/6-124">https://course.educg.net/course/6-124</a></div>
-                        <div class="line">这个比赛虽然在圈外不是很知名，但我个人认为是我参加过的难度和挑战最大的比赛。含金量不亚于 ACM 等。从工作量、架构难度、技术难度方面均富有挑战，不但需要大量的实践，还需要阅读大量的前沿论文，并转化为代码，与来自清华、北航的优秀同辈人角逐竞技。</div>
-                    </div>
-                    <div class="mb-4">
-                        <div class="float-right">2022.7</div>
-                        <h3 class="leading-4 project-title font-bold">第八届中国国际“互联网+”大学生创新创业大赛北京市 - 金奖</h3>
-                        <div class="line"><b>项目名称：</b>起舞元宇宙-智能化数字虚拟人动作引擎（身份：队员）</div>
-                        <div class="line"><b>项目地址：</b><a href="https://cy.ncss.cn/memberproject/detail/8a808087806fb70d0180dd2df09d3990">https://cy.ncss.cn/memberproject/detail/8a808087806fb70d0180dd2df09d3990</a></div>
-                        <div class="line">主要负责一些后端开发的工作，兼培训团队成员开发的工作。</div>
-                    </div>
-                    <i>*其余一些校级的比赛省略</i>
-                </div>
-            </div>
-            <div class="flex items-start mb-5 border-b-gray-300 border-b border-dashed border-b-2 pb-4">
-                <div class="title-left">
                     <h2 class="leading-4 text-xl">项目经历</h2>
                 </div>
                 <div class="flex-1">
                     <div class="mb-4">
                         <div class="float-right">2022.7</div>
                         <h3 class="leading-4 project-title font-bold">Mercuri 编译器</h3>
-                        <p class="line">一个 SysY 语言编译器（C 语言的子集），是编译系统设计赛(华为毕昇杯）的参赛项目。整体架构类似 LLVM，包括：前端词法语法分析、AST IR、DST IR、SSA IR、LIR、ASM。我们运用了控制流分析（包括支配分析、副作用分析、跨过程分析等）、数据流分析（包括活跃分析、别名分析、循环分析）等技术，实现了 GVN（包括常数传播、指令化简，配合死块消除优化迭代到不动点），复写传播、DCE（死代码消除）、循环展开和函数内联。实现了局部寄存器分配和图着色寄存器分配两种策略，最终性能达到了优化前的 400%-1000% 不等，获得三等奖。</p>
+                        <p class="line">一个 SysY 语言编译器（C 语言的子集），是编译系统设计赛(华为毕昇杯）的参赛项目。整体架构类似 LLVM，包括：前端词法语法分析、AST IR、DST
+                            IR、SSA IR、LIR、ASM。我们运用了控制流分析（包括支配分析、副作用分析、跨过程分析等）、数据流分析（包括活跃分析、别名分析、循环分析）等技术，实现了
+                            GVN（包括常数传播、指令化简，配合死块消除优化迭代到不动点），复写传播、DCE（死代码消除）、循环展开和函数内联。实现了局部寄存器分配和图着色寄存器分配两种策略，最终性能达到了优化前的
+                            400%-1000% 不等，获得三等奖。</p>
                     </div>
                     <div class="mb-4">
                         <div class="float-right">2022.3</div>
@@ -445,12 +468,12 @@
                                 90 左右成绩。</li>
                         </ul>
                         <div class="small">
-                            我认为小组合作任务，要想调动起队员的积极性，最重要的是明确<b>能给大家带来什么，而不是仅仅分配任务要求他完成</b>。积极性高的情况下，只要分好工定好时间结点，大家就能完成得很好，并且主动找事做。积极性不高的情况下，可以通过大家定期汇报（如每日开会），也能确保项目如期完成。
+                            我认为小组合作任务，要想调动起队员的积极性，最重要的是明确<b>能给大家带来什么，而不是仅仅分配任务要求他完成</b>。积极性高的情况下，只要分好工定好时间结点，大家就能完成得很好，并且主动找事做。积极性不高的情况下，可以通过大家定期汇报（如每日开会），也能基本确保项目完成。
                         </div>
                     </div>
                     <div class="mb-4">
                         <h3 class="leading-4 head-title font-bold">社会实践</h3>
-                        <p class="line">在学校中，我虽非外向健谈之人，但也广交益友，沉稳待人，基本结识了上下两年级所有有创业之魄力的同学，相互赏识，一起做了很多有价值的事情。</p>
+                        <p class="line">在学校中，我虽主攻技术，不是特别外向健谈，但也广交益友，沉稳待人，结识了不少有创业天分的同学，相互赏识，一起做了很多有价值的事情。</p>
                         <ul>
                             <li>大二时，我和刘巴特等同学，一起创建了<i>陕西优学邮教教育科技有限公司</i>，业务主要是为各学校提供信息平台如树洞等，从而拿到了信息渠道，能够接一些推广的单子。</li>
                             <li>大一我的生活还是比较贫苦的，但学习前端后，结合物理竞赛经验，大二下我接了一些北京原力超导公司的前端物理仿真单子，挣了几万块钱。更换了生产力设备，也更确信自己的技术是有价值的。
@@ -459,7 +482,7 @@
                                 感觉对自己技术提升价值不大，所以才开发了一套代码生成系统。也让我认识到不能止步于低端的业务，必须进行更深入的研究。此后不再接这种体力劳动。</li>
                             <li>大三时，我们的公司迁移为<i>北京市万众聚量科技有限公司</i>，主要打算做校园广告业务。目前一个月流水已有上万元。不过由于我这学期是最忙的，主要由合伙人打理。</li>
                         </ul>
-                        <p class="text-sm">*注：大一时刚开始学习计算机，尚未具备相关知识，所以没有做太多事情。</p>
+                        <i class="text-sm">*注：大一时刚开始学习计算机，尚未具备相关知识，所以没有做太多事情。</i>
                     </div>
                     <div class="mb-4">
                         <h3 class="leading-4 head-title font-bold">业余爱好</h3>
@@ -471,12 +494,11 @@
                         </p>
                         <p class="line">此外，对待重要事务我能沉下心有毅力。半年来我月均学习（含复习）一千个单词未曾中断。曾经参加打卡背单词活动，每天三百个单词，群中 212
                             人，竟几尽未能坚持，而我是最终按时完成、落实下来的 6
-                            人之一。高中和大学组乐队时期，但凡有演出都认真练琴，广受好评。但凡小组活动，从来都是牵头完成的人之一。一起完成任务之后，我能收获充足的成就感。我相信，在工作中也能稳健完成合理任务量。</p>
+                            人之一。高中和大学组乐队时期，但凡有演出都认真练琴，广受好评。但凡小组活动，从来都是牵头完成的人之一。一起完成任务之后，我能收获充足的成就感。</p>
+                        <div class="line">我相信，在工作中一定能够成为大家的得力助手，期待有机会与各位优秀的同行和团队共同创造佳绩！</div>
                     </div>
                 </div>
-
             </div>
-
         </article>
     </div>
 </body>
