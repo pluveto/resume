@@ -22,7 +22,7 @@
     <div class="resume">
         <header>
             <div class="flex mb-2">
-                <h1 class="text-4xl">张梓靖<span class="text-lg ml-2">意向岗位：后端开发工程师等，均有兴趣，接受调岗。</span></h1>
+                <h1 class="text-4xl">张梓靖<span class="text-lg ml-2">意向岗位：基础架构研发类岗位。</span></h1>
             </div>
             <div class="flex mb-2">
                 <div class="mr-4"><b class="inline-block w-16">工作地点</b> 北京</div>
@@ -76,11 +76,8 @@
                         <li>在我实习期间，主要负责<b>后端基础设施相关开发和维护</b>，有以下主要成果。
                             <ol>
                                 <li>
-                                    <b>迁移、测试、优化并最终重构我们的 Gateway 微服务。</b>作为我们的大数据基础设施之一，Gateway 是我们的 Telemetrics 提交入口。旧有的
-                                    Gateway
-                                    基于 Javascript 开发，面对一次 Live Site 事件彻底瘫痪。请求量达到 1.2B/天，大约是平时的六倍。
-                                    我们力挽狂澜，做了三个优化：首先是稳定性的综合优化，二是批处理机制的优化。三是 Azure Eventhub
-                                    基础设施去瓶颈。前两个均由我负责完成。最终系统的稳定性和并发性能大大改善。
+                                    <b>迁移、测试、优化并最终重构我们的 Gateway 微服务。</b>做了三个优化：首先是稳定性的综合优化，二是批处理机制的优化。三是 Azure Eventhub
+                                    基础设施去瓶颈。前两个均由我负责完成。三十分钟错误数从数千降低到几十个，消息到达率从 95% 提高到 99.999%，服务可用性从 99% 提高到 99.9%.
                                 </li>
                                 <li>
                                     <b>构建基于 Azure Pipeline 的 DevOps 工作流。</b>包括 Airflow DAG、Gateway 微服务、Spark Job 的
@@ -88,8 +85,7 @@
                                 </li>
                                 <li>
                                     <b>定位并解决线上 Kibana 集群内存泄漏问题。</b>此问题困扰我们一段时间，通过几次升级和 issue 反馈均未解决。我接手之后，通过 heapdump
-                                    工具结合源码分析，定位出内存泄漏的原因为 verbose
-                                    模式下日志字符串在内存累积未释放。因此在生产环境关闭 verbose 即可解决。
+                                    工具结合源码分析，定位出内存泄漏的 root cause。
                                 </li>
                             </ol>
                         </li>
@@ -102,11 +98,6 @@
                             </ol>
                         </li>
                     </ul>
-                    <p class="line"><b>总结</b> 微软实习期间，我获得了巨大的成长。首先，接触到众多线上代码并经历一次 Live
-                        Site，意识到要想开发出经久可靠的软件是极其困难且复杂的事情，从开发、测试、AB-Test
-                        到上线、监控和运维，每一步都需要付出众多人员的努力。同时，我接触并参与了规范化的代码管理流程的构建。还初窥到一些大型软件的架构，比如 Data
-                        Pipeline，阅读大型程序源码的能力初露。其次，认识到除了技术之外沟通、合作、领导能力对于普通开发同样要重视。最后，更是认识到，不但要会用现有技术框架，还要知道它怎么实现，这样在遇到问题时才不会手足无措。对业务有深刻的理解，对底层技术原理有求索之心，兼具沟通合作担责能力，才能造就一个优秀的工程师。
-                    </p>
                 </div>
             </div>
 
@@ -122,13 +113,11 @@
                         <p class="line"><b>项目地址：</b><a
                                 href="https://course.educg.net/course/6-124">https://course.educg.net/course/6-124</a>
                         </p>
-                        <p class="line">由教育部高等学校计算机类专业教学指导委员会和系统能力培养研究专家组共同发起，
-                            以学科竞赛推动专业建设和计算机领域创新人才培养体系改革、
-                            培育我国高端芯片及核心系统的技术突破与产业化后备人才为目标,面向高校大学生举办的全国性大赛。</p>
+                        <p class="line">由教育部计算机委员会和华为共同发起的，国内首个全国性的专业编译器竞赛。</p>
                         <p class="line">
                             我个人认为其从工作量、架构难度、技术难度方面均富有挑战，不但需要大量的实践，还需要阅读大量的前沿论文，并转化为代码，与来自清华、北航等大学的优秀同辈人角逐竞技。
                         </p>
-                        <p class="line">这个项目中，我负责了众多核心工作，简单的包括语义分析类型检查，也包括相对复杂的流分析、活跃分析等，以及大多数的编译优化。</p>
+                        <p class="line">这个项目中，我负责了众多核心工作，简单的包括语义分析类型检查，也包括相对复杂的流分析、活跃分析等，以及大多数的编译优化，占 60% 左右工作量。</p>
                     </div>
                     <div class="mb-4">
                         <div class="float-right">2022.7</div>
@@ -151,19 +140,19 @@
                     <div class="mb-4">
                         <p class="line"><b>编译器</b> 比较深入。实现过多种编译优化算法，熟悉静态分析（控制流分析、数据流分析、活跃分析），实现过 LSRA
                             和图着色寄存器分配算法，熟悉并实现过常见的编译优化算法。</p>
+                        <p class="line"><b>异构/并行高性能计算</b> 是我比较感兴趣的一个方向，目前正在学习 OpenMP、MPI、OpenCL/CUDA，了解 GPU 和 CPU 体系结构的基础知识和原理，希望将来能找到用武之地。</p>
                         <p class="line"><b>前端</b> 能够运用。有 React、Vue2 开发经验，能使用 HTML/CSS/JS ，Uniapp 移动端开发经验，WPF
                             桌面端开发经验。（此简历就是自己设计的）</p>
                         <p class="line">关键词：Node、JWT、Vuex、Redux、PixiJS、ThreeJS</p>
                         <p class="line"><b>后端</b> 能够运用。有 Golang、PHP、NodeJS 开发经验，封装过自己的 Restful
-                            后端框架，十万行以上代码经验（偏体力活）。以及上面提过的
-                            Gateway 微服务（中间件）设计实现的经历。</p>
+                            后端框架，十万行以上代码经验（偏体力活）。</p>
                         <p class="line">
                             关键词：C/C++、Gin、Hyperf、Flask；MySQL、Neo4J、Redis；Restful、Spark、Kafka、NSQ、GRPC、Docker、Elastic
                             Search/Logstash/Kibana</p>
                         <p class="line"><b>数据库原理</b> 粗浅了解。出于好奇，研究过 Redis、InnoDB。</p>
                         <p class="line">关键词：B+Tree、红黑树、索引、跳跃表、Codec、磁盘结构设计</p>
                         <p class="line"><b>操作系统</b> 文件系统方面：研究过 XFS 文件系统，并自己写了一个缩略版。组成原理方面，用 C++ 写过一个模拟 CPU 指令的虚拟机。</p>
-                        <p class="line"><b>机器智能</b> 出于好奇选学了 AI，内容涵盖：机器学习、NLP、CV 等，掌握相关库的使用经验。但是数学推导方面仍在学习。</p>
+                        <p class="line"><b>机器智能</b> 出于好奇选学了 AI，内容涵盖：机器学习、NLP、CV 等，掌握相关库的使用经验，能够搭建和训练常用的网络。但是数学推导方面仍在学习。</p>
                         <p class="line">关键词：Numpy、Matplot；SVM、CNN、VAE、GAN、RNN、LSTM、BERT、Reinforcement
                             Learning；Word2Vec、SGNG分词、文本分类、摘要、序列标注。</p>
                         <div class="pline">
@@ -209,7 +198,7 @@
                         <div class="float-right">2022.7</div>
                         <h3 class="leading-4 project-title font-bold">Mercuri 编译器</h3>
                         <p class="line">一个 SysY 语言编译器（C 语言的子集），是编译系统设计赛(华为毕昇杯）的参赛项目。整体架构类似 LLVM，包括：前端词法语法分析、AST IR、DST
-                            IR、SSA IR、LIR、ASM。我们运用了控制流分析（包括支配分析、副作用分析、跨过程分析等）、数据流分析（包括活跃分析、别名分析、循环分析）等技术，实现了
+                            IR、SSA IR、LIR、ASM。我们运用了控制流分析（包括支配分析、副作用分析、跨过程分析等）、数据流分析（包括活跃分析、数组别名分析、循环分析）等技术，实现了
                             GVN（包括常数传播、指令化简，配合死块消除优化迭代到不动点），复写传播、DCE（死代码消除）、循环展开和函数内联。实现了局部寄存器分配和图着色寄存器分配两种策略，最终性能达到了优化前的
                             400%-1000% 不等，获得三等奖。</p>
                     </div>
@@ -288,19 +277,19 @@
                                 <tr>
                                     <td>Python</td>
                                     <td>Webots Controller</td>
-                                    <td>从一个循环实现多路复用事件机制来控制机器人</td>
+                                    <td>单线程循环多路复用框架实现，机器人控制器</td>
                                     <td>2022</td>
                                 </tr>
                                 <tr>
                                     <td>Golang</td>
                                     <td>Serverbench</td>
-                                    <td>服务压测工具</td>
+                                    <td>服务压测工具（协程）</td>
                                     <td>2022</td>
                                 </tr>
                                 <tr>
                                     <td>Java</td>
                                     <td><b>ps2c</b></td>
-                                    <td>转译器，将 Pascal 代码翻译为 C 代码</td>
+                                    <td>IR 层面将 Pascal 代码翻译为 C 代码</td>
                                     <td>2022</td>
                                 </tr>
                                 <tr>
@@ -316,12 +305,6 @@
                                     <td>2022</td>
                                 </tr>
                                 <tr>
-                                    <td>Python</td>
-                                    <td>cloudctl</td>
-                                    <td>云服务器简易管理脚本</td>
-                                    <td>2022</td>
-                                </tr>
-                                <tr>
                                     <td>C#</td>
                                     <td>Copy Query</td>
                                     <td>离线快速查词工具，利用索引加速 CSV 词库</td>
@@ -329,38 +312,20 @@
                                 </tr>
                                 <tr>
                                     <td>Golang</td>
-                                    <td>shbot</td>
-                                    <td>Discord 机器人，实现命令解析 Handler 分发</td>
-                                    <td>2022</td>
-                                </tr>
-                                <tr>
-                                    <td>Golang</td>
                                     <td><b>stint</b></td>
-                                    <td>前后端均可生成，支持多模块的全栈框架</td>
+                                    <td>前后端均可生成，支持多模块和关联生成，全栈框架</td>
                                     <td>2021</td>
                                 </tr>
                                 <tr>
                                     <td>Golang</td>
                                     <td>Site Deploy</td>
-                                    <td>静态网站持续部署工具，利用压缩加速</td>
+                                    <td>静态网站 CI/CD 工具，利用压缩加速</td>
                                     <td>2021</td>
                                 </tr>
                                 <tr>
                                     <td>C</td>
                                     <td>dnsr2</td>
-                                    <td>基于红黑树的 DNS Relay 服务器</td>
-                                    <td>2021</td>
-                                </tr>
-                                <tr>
-                                    <td>C#</td>
-                                    <td>PluvetDaemon</td>
-                                    <td>Windows 进程守护工具</td>
-                                    <td>2021</td>
-                                </tr>
-                                <tr>
-                                    <td>Golang</td>
-                                    <td>BiliBot</td>
-                                    <td>Bilibili 私信机器人</td>
+                                    <td>红黑树 DNS Relay 服务（手工实现 DNS 协议）</td>
                                     <td>2021</td>
                                 </tr>
                                 <tr>
@@ -372,19 +337,19 @@
                                 <tr>
                                     <td>Golang</td>
                                     <td>Device Controller</td>
-                                    <td>基于 TCP 的气体传感器设备集群管理工具</td>
+                                    <td>基于 TCP 的气体传感器设备集群管理工具（Modbus）</td>
                                     <td>2020</td>
                                 </tr>
                                 <tr>
                                     <td>C++</td>
                                     <td>CPU Simulator</td>
-                                    <td>CPU 模拟器，指令虚拟机</td>
+                                    <td>CPU 模拟器，指令虚拟机，支持多线程</td>
                                     <td>2020</td>
                                 </tr>
                                 <tr>
                                     <td>C++</td>
                                     <td>GraphicsTablet</td>
-                                    <td>Win32 驱动程序，模拟出一个手写笔 HID 设备</td>
+                                    <td>驱动程序，模拟出一个手写笔 HID 设备（WIN32）</td>
                                     <td>2020</td>
                                 </tr>
                                 <tr>
@@ -396,19 +361,19 @@
                                 <tr>
                                     <td>Go/PHP</td>
                                     <td>PasteX</td>
-                                    <td>基于 SQLite/Redis 的 Pastebin 实现</td>
+                                    <td>SQLite/Redis 实现 Pastebin</td>
                                     <td>2020</td>
                                 </tr>
                                 <tr>
                                     <td>C#</td>
                                     <td>Caplos</td>
-                                    <td>Capslock 按键增强工具</td>
+                                    <td>Capslock 按键增强工具（WIN32）</td>
                                     <td>2020</td>
                                 </tr>
                                 <tr>
                                     <td>PHP</td>
                                     <td>Aceso</td>
-                                    <td>智能仓库管理系统，前端采用 Vue 实现</td>
+                                    <td>RFID 智能仓库管理</td>
                                     <td>2020</td>
                                 </tr>
                                 <tr>
@@ -429,12 +394,6 @@
                                     <td>Bipubipu API 后端，自制签名认证流程</td>
                                     <td>2019</td>
                                 </tr>
-                                <tr>
-                                    <td>C#</td>
-                                    <td>Replace</td>
-                                    <td>批量正则替换工具</td>
-                                    <td>2019</td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -449,11 +408,11 @@
                 <div class="flex-1">
                     <div class="mb-4">
                         <h3 class="leading-4 head-title font-bold">英语能力</h3>
-                        <p class="line">CET4/6 均一次通过，正在备考 GRE。词汇量 10000 以上，熟练阅读英文文档。</p>
+                        <p class="line">CET4/6 均一次通过（分数均 500+），正在备考 GRE。词汇量 10000 以上，熟练阅读英文文档。</p>
                     </div>
                     <div class="mb-4">
                         <h3 class="leading-4 head-title font-bold">基础技能</h3>
-                        <p class="line">能使用 Git 协作，Markdown、Latex 文档编写。熟悉常用的 Linux 发行版。熟悉 Nginx、Docker 部署，熟悉
+                        <p class="line">能使用 Git 协作，熟悉 Markdown、Latex 文档编写。熟悉常用的 Linux 发行版，主要用 ArchLinux。熟悉 Nginx、Docker 部署，熟悉
                             Kibana、Grafana 等日常工具使用。能使用 Spark、Livy、HDFS、Delta Lake 等常见大数据相关产品。</p>
                     </div>
                     <div class="mb-4">
@@ -480,7 +439,7 @@
                             </li>
                             <li>大三为了便于签合同，我创建了<i>无色透明软件工作室</i>，接了一个十七万元的合同，但主要是 CURD
                                 感觉对自己技术提升价值不大，所以才开发了一套代码生成系统。也让我认识到不能止步于低端的业务，必须进行更深入的研究。此后不再接这种体力劳动。</li>
-                            <li>大三时，我们的公司迁移为<i>北京市万众聚量科技有限公司</i>，主要打算做校园广告业务。目前一个月流水已有上万元。不过由于我这学期是最忙的，主要由合伙人打理。</li>
+                            <li>大三时，我们的公司迁移为<i>北京市万众聚量科技有限公司</i>，主要打算做校园广告业务。月均 GMV 30 万元。不过考虑到客观因素和主观因素，已经无限期搁置创业。</li>
                         </ul>
                         <i class="text-sm">*注：大一时刚开始学习计算机，尚未具备相关知识，所以没有做太多事情。</i>
                     </div>
