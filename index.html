@@ -25,7 +25,7 @@
                 <h1 class="text-4xl">张梓靖<span class="text-lg ml-2">意向岗位：基础研发类岗位。</span></h1>
             </div>
             <div class="flex mb-2">
-                <div class="mr-4"><b class="inline-block w-16">工作地点</b> 北京</div>
+                <div class="mr-4"><b class="inline-block w-16">工作地点</b> 北京，上海</div>
                 <div class="mr-4"><b class="inline-block w-8">邮箱</b> pluvet@foxmail.com</div>
                 <div class="mr-4"><b class="inline-block w-8">电话</b> +86 185 8738 7858</div>
             </div>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="flex-1">
                     <p class="leading">
-                        幸会！我是北邮计算机学院的张梓靖。我对编程满怀激情，擅长快速学习和持续钻研，经过思考和探索解决挑战。
+                        我是来自北邮计算机学院的张梓靖。我对编程满怀激情，擅长快速学习和持续钻研，经过思考和探索解决挑战。在实践中积累了丰富的项目经验。
                     </p>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                 <div class="flex-1">
                     <div class="float-right">2019.8 ~ 2023.6</div>
                     <h3 class="leading-4 head-title font-bold">北京邮电大学</h3>
-                    <p class="leading">本科 - 计算机学院，智能科学与技术，总成绩排名 31/71。最近学年均分 86.56，排名 21/71。</p>
+                    <p class="leading">本科 - 学院：计算机学院；专业：智能科学与技术；专业综合排名 31/71；最近学年均分 86.56，分数排名 21/71；GPA：3.31</p>
                 </div>
             </div>
 
@@ -69,33 +69,63 @@
                     <h2 class="leading-4 text-xl">工作经历</h2>
                 </div>
                 <div class="flex-1">
-                    <div class="float-right">2022.1 ~ 2022.8</div>
-                    <h3 class="leading-4 head-title font-bold">微软（亚洲）互联网工程院</h3>
-                    <p class="line">软件开发工程师（On-site 实习）/ WebXT BingViz 大数据组</p>
-                    <ul>
-                        <li>在我实习期间，主要负责<b>后端基础设施相关开发和维护</b>，有以下主要成果。
-                            <ol>
-                                <li>
-                                    <b>迁移、测试、优化并最终重构我们的 Gateway 微服务。</b>做了三个优化：首先是稳定性的综合优化，二是批处理机制的优化。三是 Azure Eventhub
-                                    基础设施去瓶颈。前两个均由我负责完成。三十分钟错误数从数千降低到几十个，消息到达率从 95% 提高到 99.999%，服务可用性从 99% 提高到 99.9%.
-                                </li>
-                                <li>
-                                    <b>构建基于 Azure Pipeline 的 DevOps 工作流。</b>包括 Airflow DAG、Gateway 微服务、Spark Job 的
-                                    CI/CD；也包括编写配置文件、运维脚本（Python, shell）等。
-                                </li>
-                                <li>
-                                    <b>定位并解决线上 Kibana 集群内存泄漏问题。</b>此问题困扰我们一段时间，本地无法复现，通过升级和 issue 反馈均未解决。我接手之后，通过多角度分析，定位出内存泄漏的 root cause 并解决。
-                                </li>
-                            </ol>
-                        </li>
-                        <li>另有日常工作和一些比较琐碎的成果：
-                            <ol>
-                                <li>Grafana 高可用方案设计实施，包括集群搭建，Nginx 配置和数据迁移等</li>
-                                <li>基于内部 MT 集群的 Eventhub（Kafka）的 Spark Streaming 任务编写</li>
-                                <li>基于 Golang 开发了一个 QPS 性能压测工具、内部使用的 HDFS 远程命令行管理工具、批量服务创建工具等等</li>
-                            </ol>
-                        </li>
-                    </ul>
+                    <div class="mb-4">
+                        <div class="float-right">2022.12 ~ 至今</div>
+                        <h3 class="leading-4 head-title font-bold">Kong Inc（上海分部）</h3>
+                        <p class="line">语言工具链工程师（On-site 实习）/ WASMx & Gateway</p>
+                        <ul>
+                            <li>在我实习期间，主要负责<b>ATC Router</b>的功能增强，简而言之：
+                                <ol>
+                                    <li>
+                                        <b>匹配逻辑。</b>做了三个优化：首先是稳定性的综合优化，二是批处理机制的优化。三是 Azure Eventhub
+                                        基础设施去瓶颈。前两个均由我负责完成。三十分钟错误数从数千降低到几十个，消息到达率从 95% 提高到 99.999%，服务可用性从 99% 提高到 99.9%.
+                                    </li>
+                                    <li>
+                                        <b>解析器重构</b> 从原来的优先级爬升算法，迁移为 Pratt Parser，使得代码更加简洁，可读性更高，可维护性更强。
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>此外还负责 Lua Lint 工具的开发。
+                                <ol>
+                                    <li>实现代码的格式化规则引擎</li>
+                                    <li>实现相关的 VSCode 插件和命令行接口</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="float-right">2022.1 ~ 2022.8</div>
+                        <h3 class="leading-4 head-title font-bold">微软（亚洲）互联网工程院</h3>
+                        <p class="line">软件开发工程师（On-site 实习）/ WebXT BingViz 大数据组</p>
+                        <ul>
+                            <li>实习期间，主要负责<b>后端基础设施相关开发和维护</b>。有以下主要成果。
+                                <ol>
+                                    <li>
+                                        <b>迁移、测试、优化并最终重构我们的 Gateway
+                                            微服务。</b>我主导完成三个优化：首先是基于代码分析的稳定性的综合优化，二是架构上批处理机制的优化。三是
+                                        Azure Eventhub
+                                        基础设施去瓶颈。三十分钟错误数从数千降低到几十个，消息到达率从 95% 提高到 99.999%，服务可用性从 99% 提高到 99.9%. （注：Gateway
+                                        具体是指我们的大数据平台的数据流处理引擎入口，包括 Edge 浏览器、Bing 等 Telemetrics 流量均从此进入。）
+                                    </li>
+                                    <li>
+                                        <b>构建基于 Azure Pipeline 的 DevOps 工作流。</b>包括 Airflow DAG、Gateway 微服务、Spark Job 的
+                                        CI/CD；也包括编写配置文件、运维脚本（Python, shell）等。
+                                    </li>
+                                    <li>
+                                        <b>定位并解决线上 Kibana 集群内存泄漏问题。</b>此问题困扰我们一段时间，本地无法复现，通过升级和 issue
+                                        反馈均未解决。我接手之后，通过多角度分析，定位出内存泄漏的 root cause 并解决。
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>另有日常工作和一些比较琐碎的成果：
+                                <ol>
+                                    <li>Grafana 高可用方案设计实施，包括集群搭建，Nginx 配置和数据迁移等</li>
+                                    <li>基于内部 MT 集群的 Eventhub（Kafka）的 Spark Streaming 任务编写</li>
+                                    <li>基于 Golang 开发了一个 QPS 性能压测工具、内部使用的 HDFS 远程命令行管理工具、批量服务创建工具等等</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -138,7 +168,8 @@
                     <div class="mb-4">
                         <p class="line"><b>编译器</b> 比较深入。实现过多种编译优化算法，熟悉静态分析（控制流分析、数据流分析、活跃分析），实现过 LSRA
                             和图着色寄存器分配算法，熟悉并实现过常见的编译优化算法。</p>
-                        <p class="line"><b>异构/并行高性能计算</b> 是我比较感兴趣的一个方向，目前正在学习 OpenMP、MPI、OpenCL/CUDA 以及 FPGA，了解 GPU 和 CPU 体系结构的基础知识和原理，希望将来能找到用武之地。</p>
+                        <p class="line"><b>异构/并行高性能计算</b> 是我比较感兴趣的一个方向，目前正在学习 OpenMP、MPI、OpenCL/CUDA 以及 FPGA，了解 GPU 和
+                            CPU 体系结构的基础知识和原理，希望将来能找到用武之地。</p>
                         <p class="line"><b>前端</b> 能够运用。有 React、Vue2 开发经验，能使用 HTML/CSS/JS ，Uniapp 移动端开发经验，WPF
                             桌面端开发经验。（此简历就是自己设计的）</p>
                         <p class="line">关键词：Node、JWT、Vuex、Redux、PixiJS、ThreeJS</p>
@@ -150,7 +181,8 @@
                         <p class="line"><b>数据库原理</b> 粗浅了解。出于好奇，研究过 Redis、InnoDB。</p>
                         <p class="line">关键词：B+Tree、红黑树、索引、跳跃表、Codec、磁盘结构设计</p>
                         <p class="line"><b>操作系统</b> 文件系统方面：研究过 XFS 文件系统，并自己写了一个缩略版。组成原理方面，用 C++ 写过一个模拟 CPU 指令的虚拟机。</p>
-                        <p class="line"><b>机器智能</b> 出于好奇选学了 AI，内容涵盖：机器学习、NLP、CV 等，掌握相关库的使用经验，能够搭建和训练常用的网络。但是数学推导方面仍在学习。</p>
+                        <p class="line"><b>机器智能</b> 出于好奇选学了 AI，内容涵盖：机器学习、NLP、CV 等，掌握相关库的使用经验，能够搭建和训练常用的网络。但是数学推导方面仍在学习。
+                        </p>
                         <p class="line">关键词：Numpy、Matplot；SVM、CNN、VAE、GAN、RNN、LSTM、BERT、Reinforcement
                             Learning；Word2Vec、SGNG分词、文本分类、摘要、序列标注。</p>
                         <div class="pline">
@@ -410,7 +442,8 @@
                     </div>
                     <div class="mb-4">
                         <h3 class="leading-4 head-title font-bold">基础技能</h3>
-                        <p class="line">能使用 Git 协作，熟悉 Markdown、Latex 文档编写。熟悉常用的 Linux 发行版，主要用 ArchLinux。熟悉 Nginx、Docker 部署，熟悉
+                        <p class="line">能使用 Git 协作，熟悉 Markdown、Latex 文档编写。熟悉常用的 Linux 发行版，主要用 ArchLinux。熟悉 Nginx、Docker
+                            部署，熟悉
                             Kibana、Grafana 等日常工具使用。能使用 Spark、Livy、HDFS、Delta Lake 等常见大数据相关产品。</p>
                     </div>
                     <div class="mb-4">
