@@ -1,5 +1,8 @@
 /**prelight**/
-body{counter-reset: caption;}
+body {
+  counter-reset: caption;
+  zoom: 75%;
+}
 
 blockquote,
 dl,
@@ -43,7 +46,6 @@ iframe,
 embed,
 object {
   display: block;
-  vertical-align: middle;
 }
 
 *,
@@ -60,7 +62,7 @@ button:focus {
 }
 
 html {
-  font-family: "STZhongsong", "思源宋体", ui-sans-serif, system-ui,
+  font-family: Cardo, "STZhongsong", "思源宋体", system-ui,
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji" !important;
@@ -68,13 +70,13 @@ html {
 }
 
 .resume {
-  max-width: 780px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 header {
   padding-bottom: 1em;
-  border-bottom: 2px dashed #d1d1d1;
+  border-bottom: 1px dashed #d1d1d1;
   margin-bottom: 1em;
 }
 
@@ -87,9 +89,11 @@ ul {
   list-style: circle !important;
   padding: 0;
 }
+
 ol {
   list-style: decimal !important;
 }
+
 li {
   margin-bottom: 0.4em;
   margin-top: 0.4em;
@@ -98,11 +102,16 @@ li {
 
 .head-title {
   font-size: 1.1em;
+  line-height: 2em;
   margin-bottom: 1em;
 }
-.project-title {
+
+.section-title {
+  font-family: 'Libre Bodoni';
+  font-weight: 700;
   font-size: 1.1em;
-  margin-bottom: 0.5em;
+  line-height: 1rem;
+  margin-bottom: 1em;
 }
 
 /* Better tables */
@@ -110,38 +119,44 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 0.9em;
-  width: auto;
+  width: 100%;
   max-width: 100%;
   border: 1px solid black;
   /* display: block; */
-  overflow-x: auto; /* does not work because element is not block */
+  overflow-x: auto;
+  /* does not work because element is not block */
   /* white-space: nowrap; */
   counter-increment: caption;
 }
+
 /* add bottom border on column table headings  */
-table tr > th[scope="col"] {
+table tr>th[scope="col"] {
   border-bottom: 1px solid black;
 }
+
 /* add right border on row table headings  */
-table tr > th[scope="row"] {
+table tr>th[scope="row"] {
   border-right: 1px solid black;
 }
-table > tbody > tr:first-child > td,
-table > tbody > tr:first-child > th {
+
+table>tbody>tr:first-child>td,
+table>tbody>tr:first-child>th {
   border-top: 1px solid black;
 }
-table > tbody > tr:last-child > td,
-table > tbody > tr:last-child > th {
+
+table>tbody>tr:last-child>td,
+table>tbody>tr:last-child>th {
   border-bottom: 1px solid black;
 }
 
 th,
 td {
   text-align: left;
-  padding: 0.5rem;
+  padding: 0.3rem;
   line-height: 1.1;
   vertical-align: top;
 }
+
 /* Table caption */
 caption {
   text-align: left;
@@ -156,10 +171,37 @@ caption::before {
   content: "Table " counter(caption) ". ";
   font-weight: bold;
 }
+
 .line {
   margin-bottom: 0.4em;
 }
 
 .title-left {
   width: 6em;
+}
+
+.section:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.chapter {
+  display: flex;
+  align-items: start;
+  border-bottom-color: #D1D5DB;
+  /* 灰色 300 */
+  border-bottom-style: dashed;
+  padding-bottom: 1rem;
+  /* 4个预设间距值之一 */
+}
+
+@media print {
+  .page-break {
+    display: block;
+    page-break-before: always;
+  }
+
+}
+
+.item-date {
+  float: right;
 }

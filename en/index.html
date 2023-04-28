@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Libre+Bodoni:ital@0;1&family=Suranna&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            }
+        }
+    </script>
+    <div class="resume">
+        <header>
+            <div class="flex mb-2">
+                <h1 class="text-4xl">Zijing Zhang</h1>
+            </div>
+            <div class="flex mb-2">
+                <div class="mr-4"><b class="inline-block w-20">Location</b>Shanghai/Beijing, China</div>
+                <div class="mr-4"><b class="inline-block w-16">Email</b>pluvet@foxmail.com</div>
+                <div class="mr-4"><b class="inline-block w-16">Phone</b>+86 &nbsp; 185 8738 7858</div>
+            </div>
+            <div class="flex">
+                <div class="mr-4"><b class="inline-block w-16">Github</b> <a
+                        href="https://github.com/pluveto">https://github.com/pluveto</a></div>
+                <div class="mr-4"><b class="inline-block w-16">Blog</b><a
+                        href="https://www.less-bug.com">https://www.less-bug.com</a></div>
+            </div>
+        </header>
+        <article>
+
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Intro</h2>
+                </div>
+                <div class="flex-1">
+                    <p>I'm Zijing Zhang, an ardent programmer who thrives on rapid learning and ongoing exploration to
+                        fuel my creativity. I relish solving challenges by employing critical thinking and embarking on
+                        novel avenues of exploration.</p>
+                    <p>I actively participate in the open-source community and enjoy the process of sharing and
+                        learning.</p>
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Ddu Exp.</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="item-date">2019.8 - 2023.6</div>
+                    <h3 class="section-title">Beijing University of Posts and Telecommunications
+                    </h3>
+                    <p class="leading">Undergraduate - School of Computer Science, Intelligent Science and Technology
+                        <br>
+                        Total score ranks 31/71. Average score of recent academic year is 86.56, ranking 21/71
+                    </p>
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Prof Exp.</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="section">
+                        <div class="item-date">2022.12 - 2023.4</div>
+                        <h3 class="section-title">Kong Inc. (Shanghai R&D Center)</h3>
+                        <p class="line">Software Development Engineer (On-site Internship) / Gateway Team</p>
+                        <p>Kong is a leading API and service connectivity platform that enables organizations to
+                            securely and reliably connect and manage APIs and microservices.</p>
+                        <ul>
+                            <li>During my internship, I mainly worked on the following tasks:
+                                <ol>
+                                    <li>
+                                        Learn the principles and implementation of <b>LuaJIT2</b> in-depth.
+                                    </li>
+                                    <li>
+                                        Developing <b>Lualint</b>, a code style checking tool.
+                                    </li>
+                                    <li>
+                                        Participated in improving and refactoring open-source projects Kong/ATC-Router:
+                                        <ul>
+                                            <li>Designed and implemented readiness status endpoint for Kong</li>
+                                            <li>Refactored ATC-Router's Pratt parser</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>I improved my English skills and communication abilities by talking to people from
+                                around the world during this time.</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <div class="item-date">2022.1 - 2022.8</div>
+                        <h3 class="section-title">Microsoft (Bejing, Search Technology Center of Asia)
+                        </h3>
+                        <p class="line">Software Development Engineer (On-site Internship) / Bing Viz Big Data Team</p>
+                        <ul>
+                            <li>
+                                During my internship, I achieved:
+                                <ol>
+                                    <li><b>Migrated, tested, optimized, and refactored Gateway microservices</b></li>
+                                    <li><b>Built Azure Pipeline-based DevOps workflows</b> including CI/CD for Airflow
+                                        DAG, Gateway microservices, Spark Jobs</li>
+                                </ol>
+                            </li>
+                            <li>
+                                Other achievements:
+                                <ol>
+                                    <li>Located and solved memory leaks in online Kibana clusters</li>
+                                    <li>Built Grafana high availability cluster
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Awards</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <div class="item-date">2022.8</div>
+                        <h3 class="section-title">2022 National Compiler System Design Competition - Third Prize</h3>
+                        <p class="line"><b>Project Name: </b>Mercuri SysY Compiler (Role: Team Leader & Lead Developer)
+                        </p>
+                        <p class="line"><b>Project Link: </b><a
+                                href="https://course.educg.net/course/6-124">https://course.educg.net/course/6-124</a>
+                        </p>
+                        <p class="line">National competition by China's Ministry of Education for college students to cultivate technical breakthroughs and industrial reserve talents in high-end chips and core systems..</p>
+                        <p class="line">Responsible for core tasks, such as type and flow analysis, active analysis,
+                            and compilation optimizations. The workload and technical difficulty require practice and
+                            reading cutting-edge papers to compete with outstanding peers from other universities.</p>
+
+                    </div>
+                    <div class="mb-4">
+                        <div class="item-date">2022.7</div>
+                        <h3 class="section-title">The 8th China International “Internet+” Competition Beijing - Gold
+                            Award</h3>
+                        <p class="line"><b>Project Name: </b>
+                            Dancing Metaverse - Intelligent Digital Virtual Human Motion Capture Engine (role: Team
+                            Member, Backend Developer)</p>
+                        <p class="line"><b>Project Link: </b><a
+                                href="https://cy.ncss.cn/memberproject/detail/8a808087806fb70d0180dd2df09d3990">https://cy.ncss.cn/memberproject/detail/8a808087806fb70d0180dd2df09d3990</a>
+                        </p>
+                        <p class="line">I am mainly responsible for some back-end development work, using my own
+                            secondary encapsulated framework and code generator, and training team members to develop
+                            work.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Skills</h2>
+                </div>
+                <div class="flex-1">
+                    <h3 class="section-title">Tech Stack</h3>
+                    <div class="mb-4">
+                        <p class="line"><b>Compiler</b>
+                            In depth. Implemented lots of compilation optimization algorithms,
+                            be able to do static analysis (control flow analysis, data flow analysis, liveness
+                            analysis). LSRA and graph coloring register allocation algorithms.
+                        </p>
+                        <p class="line text-sm"><i>Keywords: </i>SSA, assembly, LLVM, Pratt Parser, Semantic Analysis,
+                            Data Flow Analysis, Code Optimization</p>
+                        <p class="line"><b>Frontend&Backend</b>Experience with React, React Native, Vue,
+                            WPF desktop development. Designed own
+                            Restful backend framework</p>
+                        <p class="line text-sm"><i>Keywords: </i>Node, JWT, Vuex, Redux, ThreeJS, Golang, NestJS,
+                            Prisma, GraphQL</p>
+                        <p class="line"><b>OS</b> Studied XFS file system and wrote an abbreviated version by myself.Learn rCore.</p>
+                        <p class="line"><b>AI</b> Out of curiosity, I studied AI for one year, covering: machine
+                            learning, NLP, CV, etc.
+                        </p>
+                        <p class="line text-sm"><i>Keywords: </i>Numpy, Matplot; SVM, CNN, VAE, GAN, RNN, LSTM, BERT, RL
+                        </p>
+                    </div>
+                    <h3 class="section-title">Programming Languages</h3>
+                    <table>
+                        <caption>PL & proficiency</caption>
+                        <thead>
+                            <tr>
+                                <th>Proficiency</th>
+                                <th width="350">PL</th>
+                                <th>Degree</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Skilled</td>
+                                <td>C, C++</td>
+                                <td>Mechanism</td>
+                            </tr>
+                            <tr>
+                                <td>Commonly</td>
+                                <td>Rust, Lua, Java, Go, C#, Python, Typescript, PHP...</td>
+                                <td>Require references</td>
+                            </tr>
+                            <tr>
+                                <td>Occasionally</td>
+                                <td>Scala, Dart, Powershell</td>
+                                <td>Require more references</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Projects</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <div class="item-date">2022.7</div>
+                        <h3 class="section-title">Mercuri Compiler</h3>
+                        <p class="line">
+                            We made a SysY language compiler, similar to LLVM, for a competition using control and data
+                            flow analysis, GVN, DCE, tail call optimization, and register allocation. Our performance
+                            improved 400% - 1000% and we won third prize.
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <div class="item-date">2022.3</div>
+                        <h3 class="section-title">Pound Filesystem</h3>
+                        <p class="line">Unix file system using Extent and B+tree, based on XFS design, with free space
+                            management,
+                            Inode and data block allocation, and file/folder manipulation using libfuse for user state
+                            development.</p>
+                        <p class="line os-link">Source: <a
+                                href="https://github.com/pluveto/go-poundfs">https://github.com/pluveto/go-poundfs</a>
+                        </p>
+                    </div>
+                    <div class="mb-4 mt-5">
+                        <h3 class="mb-4 font-bold">Others</h3>
+                        <div class="line">Some projects that are small and easy</div>
+                        <table>
+                            <caption class="">Projects</caption>
+                            <thead>
+                                <tr>
+                                    <th width="40">PL</th>
+                                    <th width="150">Name</th>
+                                    <th>Description</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Rust</td>
+                                    <td>LuaLint</td>
+                                    <td>Static Lua code style checker and CI support</td>
+                                    <td>2023</td>
+                                </tr>
+                                <tr>
+                                    <td>C++</td>
+                                    <td>Interx</td>
+                                    <td>A DSL for declare and execute automatas. Flex+Bison.</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>Serverbench</td>
+                                    <td>Golang Serverbench service pressure testing tool </td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Java</td>
+                                    <td>Pascal Transpiler</td>
+                                    <td>Transpiler to translate Pascal code to C</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>BPE v3</td>
+                                    <td>Unsupervised tokenizer, BPE algorithm, parallel accelerated
+                                    </td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>Dnsrelay</td>
+                                    <td>Red-black tree based DNS Relay server </td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>C++</td>
+                                    <td>Tablet Driver</td>
+                                    <td>A Win32 driver to simulate a stylus HID device</td>
+                                    <td>2020</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">Further Info</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <h3 class="section-title">English Proficiency</h3>
+                        <p class="line">I am capable of using English as a <b>working language</b> including: listening,
+                            speaking, reading, and writing.
+                            I frequently have meetings with people from all around the world.
+                            CET4/6 tests all passed once. Vocabulary 10000+.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="section-title">Basic Skills</h3>
+                        <p class="line"><b>Git and Devops</b>: Ability to use Git and Github devops.
+                            <b>Linux</b> Familiar with common Linux distributions and shell script.
+                            <b>Docker</b> Familiar with docker compose building and deployment.
+                            <b>Data analysis</b> Kibana, Grafana and other daily tools. Spark, Livy, HDFS, Delta Lake,
+                            etc.
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="section-title">Collaboration ability</h3>
+                        <p class="line">I excel in teamwork and coordination, both as a team member and leader.
+                            Examples:</p>
+                        <ul>
+                            <li>Led core development in compiler course design, assigned tasks based on abilities,
+                                achieved a score of 96.</li>
+                            <li>Designed interface and used mock data to accelerate development of campus tour system.
+                            </li>
+                            <li>Achieved about 90 in tight deadline tasks during an epidemic.</li>
+                        </ul>
+                        <div class="small">
+                            I believe in motivating team members by helping them grow and achieve success, as well as
+                            regular reporting for timely completion.
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h3 class="section-title">Social Practice</h3>
+                        <p class="line">In school, I made friends with a lot of very thoughtful peers and did a lot of
+                            valuable things together.</p>
+                        <ul>
+                            <li>Founded Incolore Software Studio (now stopped) to facilitate
+                                contract business, and earn of 170,000 CNY for completing a project.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="section-title">Amateur hobbies</h3>
+                        <p class="line">
+                            I formed a band in high school and freshman year as an electric guitarist and bassist.
+                            In high school, I participated in the physics competition and won the second prize in my
+                            province.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+    </div>
+</body>
+
+</html>
