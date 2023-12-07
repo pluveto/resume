@@ -109,7 +109,7 @@ li {
 .section-title {
   font-family: 'Libre Bodoni';
   font-weight: 700;
-  font-size: 1.1em;
+  font-size: 1.18em;
   line-height: 1rem;
   margin-bottom: 1em;
 }
@@ -204,4 +204,9 @@ caption::before {
 
 .item-date {
   float: right;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 0.5em;
 }
