@@ -208,5 +208,6 @@ p {
 }
 
 p b {
-  font-weight: 700 !important;
+  font-weight: 800 !important;
+  margin-right: 0.5em;
 }
