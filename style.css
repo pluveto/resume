@@ -62,10 +62,7 @@ button:focus {
 }
 
 html {
-  font-family: Cardo, "STZhongsong", "思源宋体", system-ui,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-family: Cardo, "STZhongsong", "思源宋体", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
   padding-top: 2em;
 }
 
@@ -139,13 +136,13 @@ table tr>th[scope="row"] {
   border-right: 1px solid black;
 }
 
-table>tbody>tr:first-child>td,
-table>tbody>tr:first-child>th {
+table > tbody > tr:first-child > td,
+table > tbody > tr:first-child > th {
   border-top: 1px solid black;
 }
 
-table>tbody>tr:last-child>td,
-table>tbody>tr:last-child>th {
+table > tbody > tr:last-child > td,
+table > tbody > tr:last-child > th {
   border-bottom: 1px solid black;
 }
 
@@ -187,7 +184,7 @@ caption::before {
 .chapter {
   display: flex;
   align-items: start;
-  border-bottom-color: #D1D5DB;
+  border-bottom-color: #d1d5db;
   /* 灰色 300 */
   border-bottom-style: dashed;
   padding-bottom: 1rem;
@@ -199,7 +196,6 @@ caption::before {
     display: block;
     page-break-before: always;
   }
-
 }
 
 .item-date {
@@ -209,4 +205,8 @@ caption::before {
 p {
   line-height: 1.5;
   margin-bottom: 0.5em;
+}
+
+p b {
+  font-weight: 700 !important;
 }

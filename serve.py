@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # serve current directory on port 8000
 # python3 serve.py
 
