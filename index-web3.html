@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            }
+        }
+    </script>
+    <div class="resume">
+        <header>
+            <div class="flex mb-2">
+                <h1 class="text-4xl">张梓靖</h1>
+            </div>
+            <div class="flex mb-2">
+                <div class="mr-4"><b class="inline-block w-16">工作地点</b> 上海、苏州、大理；远程</div>
+                <div class="mr-4"><b class="inline-block w-8">邮箱</b> pluvet@foxmail.com</div>
+                <div class="mr-4"><b class="inline-block w-8">电话</b> +86 185 8738 7858</div>
+            </div>
+            <div class="flex mb-2">
+                <div class="mr-4"><b class="inline-block w-8">性别</b> 男</div>
+                <div class="mr-4"><b class="inline-block w-8">民族</b> 汉</div>
+                <div class="mr-4"><b class="inline-block">出生日期</b> 2000 年 5 月 5 日</div>
+            </div>
+            <div class="flex">
+                <div class="mr-4"><b class="inline-block w-16">Github</b> <a
+                        href="https://github.com/pluveto">https://github.com/pluveto</a></div>
+                <div class="mr-4"><b>博客</b> <a href="https://www.less-bug.com">https://www.less-bug.com</a></div>
+            </div>
+        </header>
+        <article>
+
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">我的优势</h2>
+                </div>
+                <div class="flex-1">
+                    <p class="leading">
+                        我是张梓靖，毕业于北京邮电大学。我对编程满怀激情，擅长快速学习和持续钻研，我从初中开始写代码，在微软和 Kong
+                        实习过，毕业后在图森未来做自动驾驶工具链研发，现在公司因通知将解散业务，出来寻找机会。
+                    </p>
+                    <p class="leading">
+                        我的最大优势是极强的学习能力，我曾经在一个周末从 0 开始到能够理解密码学 QAP 原理。我曾经在三个月内掌握了从头开发编译器并实现编译优化的技能，项目取得三等奖。
+                    </p>
+                    <p class="leading">
+                        除了技术之外，我也擅长团队合作，我曾经在多个项目中担任组长，能够合理分配任务，协调进度，保证项目按时完成。我曾经在大学创业时期管理一个 20 人的团队，实现一个月 50 万 GMV 的成果。
+                    </p>
+                    <p class="leading">
+                        在 2023 年秋招期间，我曾获得多个 45w+ 总包的 Offer，包括字节跳动、Kong、Minimax 等公司。
+                    </p>
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">教育经历</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="item-date">2019.8 ~ 2023.6</div>
+                    <h3 class="section-title">北京邮电大学</h3>
+                    <p class="leading">本科 - 学院：计算机学院；专业：智能科学与技术；专业综合排名 31/71；均分 86.56，分数排名 21/71；GPA：3.31；高考分数 660
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">工作经历</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="section">
+                        <div class="item-date">2022.1 - 2022.8</div>
+                        <h3 class="section-title">微软</h3>
+                        <p class="line">大数据工程师（现场实习）/ BingViz BigData 团队. 工作主要使用 Scala、Python、Java 和 NodeJS </p>
+                        <ul>
+                            <li>
+                                主要贡献：
+                                <ol>
+                                    <li><b>迁移、测试、优化和重构了 Gateway 微服务</b></li>
+                                    <li><b>构建了基于 Azure Pipeline 的 DevOps 工作流</b> 包括 Airflow DAG、Gateway 微服务、Spark 作业的
+                                        CI/CD</li>
+                                </ol>
+                            </li>
+                            <li>
+                                其他成就：
+                                <ol>
+                                    <li>定位并解决了在线 Kibana 集群中的内存泄漏问题</li>
+                                    <li>构建了 Grafana 高可用集群</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <div class="item-date">2022.12 - 2023.5</div>
+                        <h3 class="section-title">Kong</h3>
+                        <p class="line">编译器工程师（现场实习）/ Gateway 团队</p>
+                        <p>Kong 是领先的 API 和服务连接平台。使用 C、Lua 和 Rust</p>
+                        <ul>
+                            <li>主要贡献： <ol>
+                                    <li>深入了解了 <b>LuaJIT2</b> 编译器原理和实现。</li>
+                                    <li>开发了 <b>Lualint</b>，一个代码风格检查工具（开源）。</li>
+                                    <li>为开源项目 Kong/ATC-Router 的改进和重构做出了贡献：
+                                        <ul>
+                                            <li>为 Kong 设计并实现了就绪状态端点。</li>
+                                            <li>重构了 ATC-Router 的 Pratt 解析器。</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>通过来自全球的同事和合作伙伴协作锻炼了英语语言技能和沟通能力。
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <div class="item-date">2023.07 - 至今</div>
+                        <h3 class="section-title">图森未来</h3>
+                        <p class="line">车载系统工程师（校招入职）</p>
+                        <ul>
+                            <li>负责全栈开发、优化、测试、部署车规级关键服务。使用 C、C++、Python 和 Typescript 作为主要编程语言，Docker 和 Kubernetes 作为部署环境。
+                            </li>
+                            <ol>
+                                <li><b></b> TDC Manager（域控制器管理器），负责实现 OTA 固件更新和配置服务器和设备</li>
+                                <li><b>Octopus Manager</b>，一个自动驾驶出车前的管理系统，处理自动驾驶系统地图管理、配置下载和部署、车辆配对、Docker
+                                    镜像管理和服务状态监控等任务</li>
+                                <li>其他 DevOps 脚本的开发</li>
+                            </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">获奖经历</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <div class="item-date">2022.8</div>
+                        <h3 class="section-title">2022 全国大学生计算机系统能力大赛-编译系统设计赛 - 三等奖</h3>
+                        <p class="line"><b>项目名称：</b>Mercuri 编译器（身份：队长）</p>
+                        <p class="line"><b>项目地址：</b><a
+                                href="https://course.educg.net/course/6-124">https://course.educg.net/course/6-124</a>
+                        </p>
+                        <p class="line">由教育部计算机委员会和华为共同发起的，国内首个全国性的专业编译器竞赛。</p>
+                        <p class="line">
+                            我个人认为其从工作量、架构难度、技术难度方面均富有挑战，不但需要大量的实践，还需要阅读大量的前沿论文，并转化为代码，与来自清华、北航等大学的优秀同辈人角逐竞技。
+                        </p>
+                        <p class="line">这个项目中，我负责了众多核心工作，简单的包括语义分析类型检查，也包括相对复杂的流分析、活跃分析等，以及大多数的编译优化，占 60% 左右工作量。</p>
+                    </div>
+                    <div class="mb-4">
+                        <div class="item-date">2022.7</div>
+                        <h3 class="section-title">第八届中国国际“互联网+”大学生创新创业大赛北京市 - 省级金奖</h3>
+                        <p class="line"><b>项目名称：</b>起舞元宇宙-智能化数字虚拟人动作引擎（身份：副队长）</p>
+                        <p class="line"><b>项目地址：</b><a
+                                href="https://cy.ncss.cn/memberproject/detail/8a808087806fb70d0180dd2df09d3990">https://cy.ncss.cn/memberproject/detail/8a808087806fb70d0180dd2df09d3990</a>
+                        </p>
+                        <p class="line">主要负责一些后端开发的工作，使用了自己二次封装的框架和代码生成器，兼培训团队成员开发的工作。</p>
+                    </div>
+                    <i>*其余一些省级以下的比赛省略</i>
+                </div>
+            </div>
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">技能</h2>
+                </div>
+                <div class="flex-1">
+                    <h3 class="section-title">技术栈</h3>
+                    <div class="mb-4">
+                        <p class="line"><b>编译器</b>
+                            我对编译器实现有深入理解。实现了许多编译优化算法，能够进行静态分析（控制流分析、数据流分析、活跃度分析）。LSRA 和图着色寄存器分配算法。实现过 Lua 静态分析器、代码风格检查器。
+                        </p>
+                        <p class="line text-sm"><i>关键词： </i>SSA, 汇编, LLVM, Pratt 解析器, 语义分析, 数据流分析, 代码优化</p>
+                        <p class="line"><b>前端</b>React 技术栈，熟悉 Typescript，自己实现过类 Redux 状态管理，全权完整负责过全栈 monorepo
+                            框架搭建和开发、内部组件库实现、Electron 应用开发。</p>
+                        <p class="line text-sm"><i>关键词： </i>
+                            React、Redux、Electron、Webpack、Jest、Antd、TailwindCSS、Vite、Pnpm、Monorepo
+                        </p>
+
+                        <p class="line"><b>后端</b>使用各种语言的 RESTful 框架和 ORM 进行后端 CRUD 开发，主要是 NodeJS。熟练使用
+                            docker、k8s，完整实现过分布式共识协议。有
+                            ELK、Prometheus、Grafana 等使用经验。参与代码审查、单元测试、集成测试编写。毕业设计为基于 k8s 的 Serverless 集群自动扩容算法和应用。有 Azure
+                            Cloud 使用经验。</p>
+                        </p>
+                        <p class="line"><b>Web3</b>业余时间学习 ZK、分布式共识等原理，业余时间远程参与产品级别的 NFT 项目智能合约开发，使用过常用的 OpenZeppelin 库。
+                        <p class="line text-sm"><i>关键词：
+                            </i>ERC721、ERC20、Solidity、Ethers.js、Web3.js、OpenZeppelin、Truffle、Hardhat</p>
+                        </p>
+                    </div>
+                    <h3 class="section-title">编程语言</h3>
+                    <table>
+                        <caption>编程语言 & 熟练度</caption>
+                        <thead>
+                            <tr>
+                                <th>熟练度</th>
+                                <th width="350">编程语言</th>
+                                <th>程度</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>熟练</td>
+                                <td>C, C++</td>
+                                <td>机制</td>
+                            </tr>
+                            <tr>
+                                <td>常用</td>
+                                <td>Rust, Lua, Java, Go, C#, Python, Typescript, PHP...</td>
+                                <td>需要参考</td>
+                            </tr>
+                            <tr>
+                                <td>偶尔</td>
+                                <td>Scala, Dart, Powershell, Solidity</td>
+                                <td>需要更多参考</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">项目</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <div class="item-date">2022.7</div>
+                        <h3 class="section-title">Mercuri 编译器</h3>
+                        <p class="line">
+                            我们为一个竞赛制作了一个类似于 LLVM 的 SysY 语言编译器，实现了数据流分析、GVN、DCE、尾调用优化和寄存器分配（from scratch）。我们的性能提高了 400% -
+                            1000%，并获得了三等奖。
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <div class="item-date">2022.3</div>
+                        <h3 class="section-title">Pound 文件系统</h3>
+                        <p class="line">参考 XFS 设计的 Unix 文件系统，使用 Extent 和 B+树，具有空闲空间管理，Inode 和数据块分配功能，在用户态可以实现各种文件/文件夹操作。
+                        </p>
+                        <p class="line os-link">源代码： <a
+                                href="https://github.com/pluveto/go-poundfs">https://github.com/pluveto/go-poundfs</a>
+                        </p>
+                    </div>
+                    <div class="mb-4 mt-5">
+                        <h3 class="mb-4 font-bold">其他</h3>
+                        <table>
+                            <caption>项目</caption>
+                            <thead>
+                                <tr>
+                                    <th width="40">编程语言</th>
+                                    <th width="150">名称</th>
+                                    <th>描述</th>
+                                    <th>日期</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Typescript </td>
+                                    <td><a href="https://github.com/FlowistAI/flowist">flowist</a>
+                                    </td>
+                                    <td>
+                                        一个 AI 大模型工作流引擎
+                                    </td>
+                                    <td>2024</td>
+                                </tr>
+                                <tr>
+                                    <td>Typescript</td>
+                                    <td><a href="https://github.com/pluveto/light-pbft">light-pbft</a></td>
+                                    <td>一个 PBFT 共识协议的完整实现</td>
+                                    <td>2024</td>
+                                </tr>
+                                <tr>
+                                    <td>Solidity</td>
+                                    <td>Modragon</td>
+                                    <td>ERC721 NFT，负责空投、领奖等逻辑的实现、测试和部署。</td>
+                                    <td>2024</td>
+                                </tr>
+                                <tr>
+                                    <td>Rust</td>
+                                    <td><a href="https://github.com/Kong/lualint">lualint</a>
+                                    <td>静态 Lua 代码风格检查器和 CI 支持</td>
+                                    <td>2023</td>
+                                </tr>
+                                <tr>
+                                    <td>C++</td>
+                                    <td>Interx</td>
+                                    <td>用于声明和执行自动机的 DSL。Flex+Bison。</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>C++</td>
+                                    <td>luavm</td>
+                                    <td>Lua 解释执行器和单步调试器。</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Golang</td>
+                                    <td>Serverbench</td>
+                                    <td>Golang 服务器压力测试工具</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>BPE v3</td>
+                                    <td>无监督分词器，BPE 算法，并行加速</td>
+                                    <td>2022</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>Dnsrelay</td>
+                                    <td>基于红黑树的 DNS 中继服务器</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>Tablet Driver</td>
+                                    <td>模拟手写笔 HID 设备的 Win32 驱动</td>
+                                    <td>2020</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="title-left">
+                    <h2 class="leading-4 text-xl">更多信息</h2>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <h3 class="section-title">英语能力</h3>
+                        <p class="line">英语可作为工作语言。在学习编译器时，有论文阅读和实现的经验。</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="section-title">基本技能</h3>
+                        <p class="line">
+                            <b>Git 和 DevOps</b>：能够使用 Git 和 Github DevOps。
+                            <b>Linux</b> 熟悉常见的 Linux 发行版和 shell 脚本。
+                            <b>数据分析</b> Kibana, Grafana 等日常工具。Spark, Livy,有 NumPy, Pandas 使用经验。
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="section-title">开源工作</h3>
+                        <p class="line">
+                            我为 COSMOS、Kong 等开源项目贡献过代码。我也维护了很多开源项目，详见博客。
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="section-title">协作能力</h3>
+                        <p class="line">我在团队合作和协调方面表现出色，无论是作为团队成员还是领导者。例子：</p>
+                        <ul>
+                            <li>在编译器课程设计中领导核心开发，根据能力分配任务，取得了 96 分的成绩。</li>
+                            <li>设计接口并使用模拟数据加速校园导览系统的开发。</li>
+                            <li>在疫情期间紧迫的截止日期任务（强化学习）中取得了约 90 分的成绩。</li>
+                        </ul>
+                        <div class="small">
+                            我相信通过帮助团队成员成长和取得成功来激励他们，以及定期报告以确保及时完成。
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h3 class="section-title">社会实践</h3>
+                        <p class="line">在学校，我与许多非常有思想的同龄人交朋友，并一起做了很多有价值的事情。</p>
+                        <ul>
+                            <li>创立了 Incolore 软件工作室（现已停止），以方便合同业务，并为完成一个项目赚取了 170,000 元人民币。</li>
+                            <li>我通过博客和 Bilibili 分享技术（<a
+                                    href="https://space.bilibili.com/345852729">https://space.bilibili.com/345852729</a>）
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="section-title">业余爱好</h3>
+                        <p class="line">
+                            我在高中和大一的时候组建了一个乐队，担任电吉他手和贝斯手。在高中，我参加了物理竞赛，并在我的省份获得了二等奖。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+    </div>
+</body>
+
+</html>
